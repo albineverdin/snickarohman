@@ -1,0 +1,193 @@
+/*======== GENERAL ========*/
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	a {
+		text-decoration: none;
+
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	a:hover {
+		color: red;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	.active {
+		color: red;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+
+/*======== HERO SECTION =========*/
+
+
+.hero-section {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(./images/carpenter-closeup-1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+	/*======== NAVBAR ========*/
+	.navbar {
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		justify-content: space-between;
+		padding: 0 0 0 20px;
+		color: white;
+	}
+
+	.navbar-links {
+		display: flex;
+		align-items: center;
+	}
+
+	.navbar-links li {
+		margin: 0 30px;
+	}
+
+	.navbar img {
+		width: 200px;
+
+	}
+
+header {
+	text-align: center;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 16vmin;
+	margin-bottom: 100px;
+	color: white;
+	padding-top: 25vh;
+}
+
+.contact-button {
+	padding: 8px 15px;
+	background-color: red;
+	border-radius: 30px;
+	color: white;
+}
+
+.contact-button a:hover {
+	color: inherit;
+}
+
+/*======== BODY ========*/
+
+.grid-container {
+	/*width: 100vw;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: beige;
+}
+
+.image-column {
+	width: 100%;
+	max-height: 400px;
+}
+
+.image-column > img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	max-height: 400px;
+}
+
+.text-column {
+	grid-column: span 1;
+	width: 100%;
+	height: 400px;
+}
+
+.welcome-section {
+
+	background-color: red;
+}
+
+.about-section {
+
+	background-color: yellow;
+}
+
+
+/* MERIT SECTION*/
+.merit-section {
+	grid-column: span 2;
+	background-color: blue;
+
+	padding: 100px 0px;
+	margin: 100px 200px;
+}
+
+.merit-container {
+	
+	background-color: red;
+	display: grid;
+	
+	padding: 0px 0;
+}
+
+.merit-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	margin: 0 30px;
+	padding: 8px 12px;
+	
+}
+
+/* WORK SECTION */
+.work-section {
+	background-color: rgb(87, 17, 17);
+	grid-column: span 2;
+	text-align:center;
+	color: white;
+	padding: 100px 0px;
+}
+
+.contact-section {
+	background-color: rgb(105, 77, 12);
+	grid-column: span 2;
+	text-align:center;
+	color: white;
+	padding: 100px 0px;
+}
+
+/*======== FOOTER ========*/
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 850px) {
+	.navbar {
+		padding: 0;
+	}
+
+}
