@@ -22,11 +22,13 @@
 
 	a:link {
 		text-decoration: none;
+		color: white;
+
 	}
 
 	a:visited {
 		text-decoration: none;
-		color: inherit;
+		color: white;
 	}
 
 	a:hover {
@@ -39,8 +41,8 @@
 
 	.active {
 		color: #9B2915;
-		text-decoration: underline;
-		text-underline-offset: 5px;
+		text-decoration: underline 2px;
+		text-underline-offset: 10px;
 		font-weight: bold;
 	}
 
@@ -224,6 +226,19 @@ footer {
 	color: white;
 	text-align: center;
 }
+
+
+
+
+
+/*======== WORK IN PROGRESS ========*/
+
+.wip {
+	text-align: center;
+}
+
+
+
 
 
 
