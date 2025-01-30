@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*======== GENERAL ========*/
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+
+	p, a {
+		font-family: "Poppins", sans-serif;
+	}
+
+	h1, h2, h3, h4 {
+		font-family: "Playfair Display", serif;
 	}
 
 	a {
@@ -20,7 +30,7 @@
 	}
 
 	a:hover {
-		color: red;
+		color: #9B2915;
 	}
 
 	ul {
@@ -28,13 +38,17 @@
 	}
 
 	.active {
-		color: red;
+		color: #9B2915;
 		text-decoration: underline;
+		text-underline-offset: 5px;
 		font-weight: bold;
 	}
 
 /*======== HERO SECTION =========*/
 
+body {
+	background-color: white;
+}
 
 .hero-section {
 	height: 100vh;
@@ -83,7 +97,7 @@ header h1 {
 
 .contact-button {
 	padding: 8px 15px;
-	background-color: red;
+	background-color: #9B2915;
 	border-radius: 30px;
 	color: white;
 }
@@ -98,28 +112,38 @@ header h1 {
 	/*width: 100vw;*/
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: beige;
+	background-color: #FEE3C8;
 }
 
-.image-column {
-	width: 100%;
-	max-height: 400px;
-}
+	.image-column {
+		width: 100%;
+		max-height: 50vh;
+	}
 
-.image-column > img {
-	object-fit: cover;
-	object-position: center;
-	width: 100%;
-	max-height: 400px;
-}
+	.image-column > img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		max-height: 50vh;
+	}
 
-.text-column {
-	grid-column: span 1;
-	width: 100%;
-	height: 400px;
-}
+	.text-column {
+		width: 100%;
+		height: 50vh;
+		padding-top: 60px;
+	}
 
-.welcome-section {
+	#welcome-column {
+		padding-left: 100px;
+		padding-right: 250px; 
+	}
+
+	#about-column {
+		padding-left: 250px;
+		padding-right: 100px;
+	}
+
+/* .welcome-section {
 
 	background-color: red;
 }
@@ -127,51 +151,70 @@ header h1 {
 .about-section {
 
 	background-color: yellow;
-}
+} */
 
 
 /* MERIT SECTION*/
 .merit-section {
 	grid-column: span 2;
-	background-color: blue;
+	background-color: #9B2915;
 
-	padding: 100px 0px;
-	margin: 100px 200px;
-}
+	/* padding: 100px 0px;
+	margin: 100px 200px; */
 
-.merit-container {
-	
-	background-color: red;
-	display: grid;
-	
-	padding: 0px 0;
-}
-
-.merit-box {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: white;
-	margin: 0 30px;
-	padding: 8px 12px;
 	
 }
+
+	.merit-container {
+		
+		/* background-color: red; */
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 100px 250px;
+		padding: 0px 0;
+	}
+
+		.merit-box {
+			/* background-color: green; */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 30px;
+			padding: 30px 60px;
+			color: white;
+			
+		}
+
+		.merit-box > img {
+			width: 60px;
+			height: 60px;
+			/* padding: 30px; */
+		}
+
+		.merit-box h2 {
+			padding-top: 32px;
+		}
+
+		.merit-box p {
+			padding-top: 16px;
+			text-align: justify;
+		}
 
 /* WORK SECTION */
 .work-section {
-	background-color: rgb(87, 17, 17);
+	background-color: #FEE3C8;
 	grid-column: span 2;
 	text-align:center;
-	color: white;
-	padding: 100px 0px;
+	color: black;
+	padding: 100px 250px;
 }
 
 .contact-section {
-	background-color: rgb(105, 77, 12);
+	background-color: #9B2915;
 	grid-column: span 2;
 	text-align:center;
 	color: white;
-	padding: 100px 0px;
+	padding: 100px 250px;
 }
 
 /*======== FOOTER ========*/
