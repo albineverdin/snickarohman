@@ -183,13 +183,14 @@ header h1 {
 			align-items: center;
 			margin: 0 30px;
 			padding: 30px 60px;
-			color: white;
+			color: #FEE3C8;
 			
 		}
 
 		.merit-box > img {
 			width: 60px;
 			height: 60px;
+			filter: invert(95%) sepia(7%) saturate(2137%) hue-rotate(307deg) brightness(95%) contrast(131%);
 			/* padding: 30px; */
 		}
 
