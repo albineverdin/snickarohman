@@ -203,7 +203,7 @@ header h1 {
 			text-align: justify;
 		}
 
-/* WORK SECTION */
+/*======== WORK SECTION ========*/
 .work-section {
 	background-color: #FEE3C8;
 	grid-column: span 2;
@@ -212,6 +212,7 @@ header h1 {
 	padding: 100px 250px;
 }
 
+/*======== CONTACT SECTION ========*/
 .contact-section {
 	background-color: #9B2915;
 	grid-column: span 2;
@@ -219,6 +220,58 @@ header h1 {
 	color: white;
 	padding: 100px 250px;
 }
+
+
+/*======== CONTACT FORM ========*/
+.contact-form {
+	background-color: #9B2915;
+	display: flex;
+	padding-bottom: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-container {
+	width: 100vw;
+	padding: 0 250px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.input-box input {
+	width: 100%;
+	height: 50px;
+	margin: 12px 0;
+	background: #FEE3C8;
+	border: none;
+	border-radius: 6px;
+	color: black;
+}
+
+#input-name, #input-phone {
+	grid-column: span 1;
+	margin: 0 8px;
+}
+
+#input-email {
+	grid-column: span 2;
+	margin: 0 8px;
+}
+
+#input-message {
+	grid-column: span 2;
+	margin: 0 8px;
+}
+
+#input-message input {
+	height: 150px;
+}
+
+#input-submit {
+	grid-column: span 2;
+	margin: 0 auto;
+}
+
 
 /*======== FOOTER ========*/
 
