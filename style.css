@@ -116,8 +116,9 @@ header h1 {
 .grid-container {
 	/*width: 100vw;*/
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: black;
+	/* grid-template-columns: repeat(2, 1fr); */
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1 fr));
+	background-color: #FEE3C8;
 }
 
 	.image-column {
@@ -136,6 +137,8 @@ header h1 {
 		width: 100%;
 		height: 50vh;
 		padding-top: 60px;
+		overflow: hidden;
+		font-size: 1em;
 	}
 
 	#welcome-column {
@@ -306,7 +309,6 @@ footer {
 		background-color: #9B2915;
 		grid-column: span 2;
 		color: #FEE3C8;
-		
 	}
 
 	.list-section-container {
@@ -326,9 +328,16 @@ footer {
 		gap: 100px;
 	}
 
-	.liv-div {
+	.list-div {
 		display: flex;
 		align-items: center;
+	}
+
+
+	.quadrant-grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(200px, 1fr));
 	}
 
 	#rot-1 {
