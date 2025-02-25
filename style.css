@@ -142,13 +142,13 @@ header h1 {
 	}
 
 	#welcome-column {
-		padding-left: 100px;
-		padding-right: 250px; 
+		padding-left: 200px;
+		padding-right: 200px; 
 	}
 
 	#about-column {
-		padding-left: 250px;
-		padding-right: 100px;
+		padding-left: 200px;
+		padding-right: 200px;
 	}
 
 /* .welcome-section {
@@ -178,7 +178,8 @@ header h1 {
 		/* background-color: red; */
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		margin: 100px 250px;
+		margin: 100px 100px;
+		justify-content: space-around;
 		padding: 0px 0;
 	}
 
@@ -224,7 +225,7 @@ header h1 {
 	grid-column: span 2;
 	text-align:center;
 	color: white;
-	padding: 100px 250px;
+	padding: 100px 350px;
 }
 
 
@@ -239,7 +240,7 @@ header h1 {
 
 .form-container {
 	width: 100vw;
-	padding: 0 250px;
+	padding: 0 350px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
