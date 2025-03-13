@@ -32,7 +32,7 @@
 		color: white;
 	}
 
-	a:hover {
+	.navbar a:hover {
 		color: #9B2915;
 	}
 
@@ -40,17 +40,24 @@
 		list-style: none;
 	}
 
-	.active {
-		color: #9B2915;
-		text-decoration: underline 2px;
-		text-underline-offset: 10px;
-		font-weight: bold;
-	}
+	
 
 /*======== HERO SECTION =========*/
 
 body {
 	background-color: white;
+}
+
+
+
+/*======== BODY ========*/
+
+.grid-container {
+	/*width: 100vw;*/
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(300px, 1 fr)); */
+	background-color: #FEE3C8;
 }
 
 .hero-section-home {
@@ -59,10 +66,50 @@ body {
 	background-image: url(./images/carpenter-closeup-1.jpg);
 	background-position: center;
 	background-size: cover;
+
+	
 }
+
+	/* SIDEBAR */
+	/* .sidebar {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 250px;
+		z-index: 999;
+		background-color: white;
+		box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		color: black;
+	}
+
+
+	.sidebar-links ul {
+		width: 100%;
+	}
+
+	.sidebar-links li {
+		height: 50px;
+		width: 100%;
+	}
+
+	.sidebar a{
+		color: black;
+		height: 100%;
+		padding: 0 30px;
+	}
+
+	.sidebar a:hover {
+		background-color: black;
+	} */
+
 	/*======== NAVBAR ========*/
 	.navbar {
-		grid-column: span 2;
+		/* grid-column: span 2; */
 		display: flex;
 		/* position: absolute;
 		top: 0;
@@ -81,6 +128,13 @@ body {
 
 	.navbar-links li {
 		margin: 0 30px;
+	}
+
+	.navbar-active {
+		color: #9B2915;
+		text-decoration: underline 2px;
+		text-underline-offset: 10px;
+		font-weight: bold;
 	}
 
 	.navbar img {
@@ -111,44 +165,34 @@ header h1 {
 	color: inherit;
 }
 
-/*======== BODY ========*/
-
-.grid-container {
-	/*width: 100vw;*/
-	display: grid;
-	/* grid-template-columns: repeat(2, 1fr); */
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1 fr));
-	background-color: #FEE3C8;
-}
-
 	.image-column {
 		width: 100%;
-		max-height: 50vh;
+		height: 50vh;
 	}
 
-	.image-column > img {
+	.image-column img {
 		object-fit: cover;
 		object-position: center;
 		width: 100%;
-		max-height: 50vh;
+		height: 50vh;
 	}
 
 	.text-column {
 		width: 100%;
 		height: 50vh;
-		padding-top: 60px;
+		padding: 60px 100px;
 		overflow: hidden;
 		font-size: 1em;
 	}
 
 	#welcome-column {
-		padding-left: 200px;
-		padding-right: 200px; 
+		background-color: #9B2915;
+		color: #FEE3C8;
 	}
 
 	#about-column {
-		padding-left: 200px;
-		padding-right: 200px;
+		/* padding-left: 200px;
+		padding-right: 200px; */
 	}
 
 /* .welcome-section {
@@ -164,7 +208,7 @@ header h1 {
 
 /* MERIT SECTION*/
 .merit-section {
-	grid-column: span 2;
+	grid-column: 1 /-1;
 	background-color: #9B2915;
 
 	/* padding: 100px 0px;
@@ -178,9 +222,9 @@ header h1 {
 		/* background-color: red; */
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		margin: 100px 100px;
+		margin: 100px 0;
 		justify-content: space-around;
-		padding: 0px 0;
+		padding: 0 70px;
 	}
 
 		.merit-box {
@@ -188,13 +232,13 @@ header h1 {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin: 0 30px;
-			padding: 30px 60px;
+			margin: 0 35px;
+			/* padding: 30px; */
 			color: #FEE3C8;
 			
 		}
 
-		.merit-box > img {
+		.merit-box img {
 			width: 60px;
 			height: 60px;
 			filter: invert(95%) sepia(7%) saturate(2137%) hue-rotate(307deg) brightness(95%) contrast(131%);
@@ -202,7 +246,7 @@ header h1 {
 		}
 
 		.merit-box h2 {
-			padding-top: 32px;
+			padding-top: 0;
 		}
 
 		.merit-box p {
@@ -212,20 +256,28 @@ header h1 {
 
 /*======== WORK SECTION ========*/
 .work-section {
+	width: 100vw;
+	height: 100vh;
 	background-color: #FEE3C8;
-	grid-column: span 2;
+	grid-column: 1 / -1;
 	text-align:center;
 	color: black;
-	padding: 100px 250px;
+	padding: 100px;
+}
+
+.work-section img {
+	height: 50vh;
+	width: 50vw;
 }
 
 /*======== CONTACT SECTION ========*/
 .contact-section {
+	width: 100vw;
 	background-color: #9B2915;
-	grid-column: span 2;
+	grid-column: 1 / -1;
 	text-align:center;
 	color: white;
-	padding: 100px 350px;
+	padding: 100px;
 }
 
 
@@ -240,7 +292,7 @@ header h1 {
 
 .form-container {
 	width: 100vw;
-	padding: 0 350px;
+	/* margin: 0 350px; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -295,7 +347,7 @@ footer {
 
 	/*===== HERO =====*/
 	.services-hero {
-		grid-column: span 2;
+		grid-column: 1 / -1;
 		background-color: white;
 		margin: auto;
 		height: 40vh;
@@ -363,12 +415,77 @@ footer {
 
 
 
+@media only screen and (max-width: 1200px){
+	
+	.navbar-links li {
+		margin: 0 20px;
+	}
 
+}
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 850px) {
-	.navbar {
-		padding: 0;
+
+	.navbar-links{
+		display: none;
 	}
+
+	/* .navbar-links {
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 999;
+		width: 300px;
+		background-color: black;
+	}
+
+	.navbar-links a{
+		box-sizing: border-box;
+		height: auto;
+		width: 100%;
+		/* padding: 20px 30px; */
+	/* } */
+
+
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+
+
+	.image-column {
+		width: 100vw;
+	}
+
+
+
+	.merit-container {
+		
+		/* background-color: red; */
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin: 50px 50px;
+		justify-content: space-around;
+		padding: 0px 0;
+	}
+
+		.merit-box {
+			/* background-color: green; */
+			display: flex;
+			/* align-items: baseline; */
+			flex-direction: column;
+			justify-content: space-around;
+			/* grid-template-rows: 1 / -1; */
+			align-items: center;
+			margin: 0 60px;
+			padding: 30px 0;
+			color: #FEE3C8;
+		}
+
+		.merit-box img {
+			margin: 10px;
+		}
+
 
 }
