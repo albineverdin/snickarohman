@@ -393,9 +393,9 @@ footer {
 	}
 
 	.services-hero {
-		background-color:#FEE3C8;
-		color: black;
-		padding: 100px;
+		background-color:#9B2915;
+		color: #FEE3C8;
+		padding: 70px 100px;
 		height: calc(70vh - 65px);
 		width: 100vw;
 		border-radius: 30px 30px 0 0;
@@ -408,41 +408,50 @@ footer {
 
 	.services-hero-quote img {
 		height: 100px;
-		opacity: 0.1;
+		opacity: 0.15;
+		filter: brightness(0) saturate(100%) invert(60%) sepia(88%) saturate(3808%) hue-rotate(13deg) brightness(110%) contrast(99%);
 	}
 
 	#quote-top {
 		position: relative;
 		top: 100px;
 		left: -100px;
-		transform: rotate(180deg)
+		transform: rotate(180deg);
 	}
 
-	#quote-bottom {
+	/* #quote-bottom {
 		position: relative;
 		top: -50px;
 		right: 0;
-	}
+	} */
 
 
 	/*===== SERVICES LIST =====*/
 	.services-list-section {
 		padding: 100px 0;
-		background-color: #9B2915;
+		background-color: #FEE3C8;
 		grid-column: 1 / -1;
-		color: #FEE3C8;
-	}
-
-	.list-section-container {
-		width: 50%;
-		/* margin: auto; */
+		color: black;
 	}
 
 	.services-list-section h1 {
 		text-align: center;
 	}
 
+	.list-section-container {
+		width: 50%;
+		margin: auto;
+		/* margin: auto; */
+	}
+
+	.list-section-container h2 {
+		padding-top: 30px;
+		text-align: end;
+		color:#F18F01;
+	}
+
 	.list-container {
+		margin-top: 60px;
 		display: flex;
 		align-items:center;
 		justify-content: space-between;
@@ -453,25 +462,86 @@ footer {
 		align-items: center;
 	}
 
+	.list-div li {
+		font-family: "Poppins", sans-serif;
+	}
+
 	#rot1 {
-		background-color:#FEE3C8;
-		color: black;
+		background-color:#9B2915;
+		color: #FEE3C8;
 	}
 
 	#rot2 {
-		background-color: #9B2915;
-		color:#FEE3C8
+		background-color: #FEE3C8;
+		color: black;
 	}
 	
 
 
 
-/*======== WORK IN PROGRESS ========*/
 
-.wip {
-	text-align: center;
+
+/*======== INSPIRATION ========*/
+
+.hero-section-inspiration {
+	grid-column: 1 / -1;
+	background-image: url(./images/carpenter-closeup-1.jpg);		background-position: center;
+	background-size: cover;
+	height: 70vh;
 }
 
+.inspiration-hero {
+	height: calc(70vh - 65px);
+	background-color:#9B2915;
+	color:#FEE3C8;
+	border-radius: 30px 30px 0 0;
+	display: flex;
+}
+
+.inspiration-hero-left {
+	width: 50vw;
+	padding: 100px;
+}
+
+.inspiration-hero-left p, h1 {
+	padding-top: 30px;
+}
+
+.inspiration-hero-left h1 {
+	text-align: left;
+}
+
+.inspiration-hero-right {
+	width: 40vw;
+	height: 40vh;
+	padding: 100px;
+	margin: 100px auto;
+	background-color: white;
+}
+
+
+
+
+.services-hero {
+		background-color:#9B2915;
+		color: #FEE3C8;
+		padding: 70px 100px;
+		height: calc(70vh - 65px);
+		width: 100vw;
+		border-radius: 30px 30px 0 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+/*======== WORK IN PROGRESS ========*/
 
 
 
