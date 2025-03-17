@@ -17,46 +17,43 @@
 
 <body>
 
-	<div class="hero-section-home">
-
-		<!-- SIDEBAR -->
-		<!-- <nav class="sidebar">
-			<ul class="sidebar-links">
-				<li class="active"><a href="#">Hem</a></li>
-				<li><a href="./services.html">Tjänster</a></li>
-				<li><a href="./inspiration.html">Inspiration</a></li>
-				<li><a href="./about.html">Om mig</a></li>
-				<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
-			</ul>
-		</nav> -->
-
-		<!-- NAVBAR -->
-		<nav class="navbar">
-			<a href="./index.html">
-				<img src="images/snickarohman-white.png" alt="SnickarÖhmans logga">
-			</a>
-			<ul class="navbar-links">
-				<li class="navbar-active"><a href="#">Hem</a></li>
-				<li><a href="./services.html">Tjänster</a></li>
-				<li><a href="./inspiration.html">Inspiration</a></li>
-				<li><a href="./about.html">Om mig</a></li>
-				<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
-			</ul>
-		</nav>
-		<header>
-			<h1>
-				Anlita en<br>expert?
-			</h1>
-			<a href="#" class="contact-button">Kontakta mig!</a>
-		</header>
-	</div>
-
-
-
-
-
 	<!-- MAIN BODY -->
 	<div class="grid-container">
+
+
+		<div class="hero-section-home">
+
+			<!-- SIDEBAR -->
+			<!-- <nav class="sidebar">
+				<ul class="sidebar-links">
+					<li class="active"><a href="#">Hem</a></li>
+					<li><a href="./services.html">Tjänster</a></li>
+					<li><a href="./inspiration.html">Inspiration</a></li>
+					<li><a href="./about.html">Om mig</a></li>
+					<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
+				</ul>
+			</nav> -->
+	
+			<!-- NAVBAR -->
+			<nav class="navbar">
+				<a href="./index.html">
+					<img src="images/snickarohman-white.png" alt="SnickarÖhmans logga">
+				</a>
+				<ul class="navbar-links">
+					<li class="navbar-active"><a href="#">Hem</a></li>
+					<li><a href="./services.html">Tjänster</a></li>
+					<li><a href="./inspiration.html">Inspiration</a></li>
+					<li><a href="./about.html">Om mig</a></li>
+					<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
+				</ul>
+			</nav>
+			<header>
+				<h1>
+					Anlita en<br>expert?
+				</h1>
+				<a href="#" class="contact-button">Kontakta mig!</a>
+			</header>
+		</div>
 
 		<!-- WELCOME SECTION-->
 		<!-- <section class="welcome-section"> -->
@@ -128,17 +125,23 @@
 
 
 		<!-- WORK SECTION -->
-		<section class="work-section">
-			<h2>Tidigare arbeten</h2>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-				Quaerat veritatis, officia eius illum officiis animi enim.
-				Aperiam, enim! Quisquam, deserunt.</p>
-			 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-				Quaerat veritatis, officia eius illum officiis animi enim.
-				Aperiam, enim! Quisquam, deserunt.</p>
+		<div class="work-section">
+			<div class="work-sec-text">
+				<h2>Tidigare arbeten</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Quaerat veritatis, officia eius illum officiis animi enim.
+					Aperiam, enim! Quisquam, deserunt.</p>
+				 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Quaerat veritatis, officia eius illum officiis animi enim.
+					Aperiam, enim! Quisquam, deserunt.</p>
+			</div>
 			
-			<img src="./work-sec-1.jpeg" alt="#">
-		</section>
+			<div class="work-sec-images">
+				<img src="./images/work-sec-1.jpeg" alt="#" id="work-sec-1">
+				<img src="./images/work-sec-2.jpeg" alt="#" id="work-sec-2">
+				<!-- <img src="./images/work-sec-3.jpeg" alt="#" id="work-sec-3"> -->
+			</div>
+		</div>
 
 
 		<!-- CONTACT SECTION -->
@@ -153,41 +156,41 @@
 
 		</div>
 			<!-- CONTACT FORM -->
+			<div class="contact-form">
+
+				<form actions="#">
+					<div class="form-container">
+						<div class="input-box" id="input-name">
+							<!-- <label for="name">Namn:</label> -->
+							<input type="text" id="name" name="namn" placeholder="För- och efternamn">
+						</div>	
 		
-	</div>
-
-	<div class="contact-form">
-
-		<form actions="#">
-			<div class="form-container">
-				<div class="input-box" id="input-name">
-					<!-- <label for="name">Namn:</label> -->
-					<input type="text" id="name" name="namn" placeholder="För- och efternamn">
-				</div>	
-
-				<div class="input-box" id="input-phone">
-					<!-- <label for="phone">Telefonnummer:</label> -->
-					<input type="tel" id="phone" name="phone" placeholder="Telefonnummer">
-				</div>
-
-				<div class="input-box" id="input-email">
-					<!-- <label for="email">Epost:</label> -->
-					<input type="email" id="email" name="email" placeholder="Epostadress">
-				</div>
-
-				<div class="input-box" id="input-message">
-					<!-- <label for="message">Meddelande:</label> -->
-					<input type="text" id="message" name="message" placeholder="Hej ...">
-				</div>	
-
-				<div class="button" id="input-submit">
-					<input type="submit" value="Skicka">
-				</div>
+						<div class="input-box" id="input-phone">
+							<!-- <label for="phone">Telefonnummer:</label> -->
+							<input type="tel" id="phone" name="phone" placeholder="Telefonnummer">
+						</div>
+		
+						<div class="input-box" id="input-email">
+							<!-- <label for="email">Epost:</label> -->
+							<input type="email" id="email" name="email" placeholder="Epostadress">
+						</div>
+		
+						<div class="input-box" id="input-message">
+							<!-- <label for="message">Meddelande:</label> -->
+							<input type="text" id="message" name="message" placeholder="Hej ...">
+						</div>	
+		
+						<div class="button" id="input-submit">
+							<input type="submit" value="Skicka">
+						</div>
+					</div>
+		
+				</form>
+		
 			</div>
-
-		</form>
-
 	</div>
+
+	
 
 
 	
