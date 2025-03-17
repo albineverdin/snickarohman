@@ -45,7 +45,9 @@
 /*======== HERO SECTION =========*/
 
 body {
-	background-color: white;
+	background-image: url(./images/carpenter-closeup-1.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 
@@ -61,6 +63,7 @@ body {
 }
 
 .hero-section-home {
+	grid-column: 1 / -1;
 	height: 100vh;
 	width: 100vw;
 	background-image: url(./images/carpenter-closeup-1.jpg);
@@ -151,7 +154,7 @@ header h1 {
 	font-size: 16vmin;
 	margin-bottom: 100px;
 	color: white;
-	padding-top: 25vh;
+	padding-top: 13vh;
 }
 
 .contact-button {
@@ -213,8 +216,6 @@ header h1 {
 
 	/* padding: 100px 0px;
 	margin: 100px 200px; */
-
-	
 }
 
 	.merit-container {
@@ -254,21 +255,37 @@ header h1 {
 			text-align: justify;
 		}
 
+
+
 /*======== WORK SECTION ========*/
 .work-section {
 	width: 100vw;
-	height: 100vh;
+	max-height: 100vh;
 	background-color: #FEE3C8;
 	grid-column: 1 / -1;
 	text-align:center;
 	color: black;
-	padding: 100px;
 }
 
-.work-section img {
+.work-sec-text {
+	padding: 100px 100px 50px 100px;
+}
+
+
+.work-sec-images img {
+	object-fit: cover;
+	object-position: center;
 	height: 50vh;
 	width: 50vw;
 }
+
+.work-sec-images {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+
 
 /*======== CONTACT SECTION ========*/
 .contact-section {
@@ -283,15 +300,17 @@ header h1 {
 
 /*======== CONTACT FORM ========*/
 .contact-form {
+	grid-column: 1 / -1;
+	/* width: 50%; */
 	background-color: #9B2915;
-	display: flex;
+	/* display: flex; */
 	padding-bottom: 100px;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center; */
+	/* align-items: center; */
 }
 
 .form-container {
-	width: 100vw;
+	width: 50%;
 	/* margin: 0 350px; */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -346,13 +365,21 @@ footer {
 /*======== SERVICES ========*/
 
 	/*===== HERO =====*/
-	.services-hero {
+	.hero-section-services {
 		grid-column: 1 / -1;
-		background-color: white;
-		margin: auto;
-		height: 40vh;
-		width: 50%;
-		border-radius: 30px;
+		background-image: url(./images/carpenter-closeup-1.jpg);
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+	}
+
+	.services-hero {
+		background-color:#FEE3C8;
+		color: black;
+		padding: 200px;
+		height: calc(100vh - 65px);
+		width: 100vw;
+		border-radius: 30px 30px 0 0;
 	}
 
 
@@ -360,13 +387,13 @@ footer {
 	.services-list-section {
 		padding: 30px 0;
 		background-color: #9B2915;
-		grid-column: span 2;
+		grid-column: 1 / -1;
 		color: #FEE3C8;
 	}
 
 	.list-section-container {
 		width: 50%;
-		margin: auto;
+		/* margin: auto; */
 	}
 
 	.services-list-section h1 {
@@ -375,10 +402,8 @@ footer {
 
 	.list-container {
 		display: flex;
-		margin: auto;
-		width: 50%;
+		align-items:center;
 		justify-content: space-between;
-		gap: 100px;
 	}
 
 	.list-div {
@@ -386,23 +411,16 @@ footer {
 		align-items: center;
 	}
 
-
-	.quadrant-grid {
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(200px, 1fr));
+	#rot1 {
+		background-color:#FEE3C8;
+		color: black;
 	}
 
-	#rot-1 {
-		padding-left: 250px;
-		padding-right: 100px;
+	#rot2 {
+		background-color: #9B2915;
+		color:#FEE3C8
 	}
-
-	#rot-2 {
-		padding-left: 100px;
-		padding-right: 250px; 
-	}
-
+	
 
 
 
