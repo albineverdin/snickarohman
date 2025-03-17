@@ -14,24 +14,105 @@
 </head>
 
 <body>
-	<div class="hero-section">
-		<nav class="navbar">
-			<a href="./index.html">
-				<img src="images/snickarohman-white.png" alt="SnickarÖhmans logga">
-			</a>
-			<ul class="navbar-links">
-				<li><a href="./index.html">Hem</a></li>
-				<li><a href="./services.html">Tjänster</a></li>
-				<li class="active"><a href="./inspiration.html">Inspiration</a></li>
-				<li><a href="./about.html">Om mig</a></li>
-				<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
-			</ul>
-		</nav>
-		<header>
-			<h1>Work in progress</h1>
-			<h3>Come back soon</h3>
-		</header>
+	<div class="grid-container">
+		<!-- HERO SECTION -->
+		<div class="hero-section-inspiration">
+
+			<!-- NAVBAR -->
+			<nav class="navbar">
+				<a href="./index.html">
+					<img src="images/snickarohman-white.png" alt="SnickarÖhmans logga">
+				</a>
+				<ul class="navbar-links">
+					<li><a href="./index.html">Hem</a></li>
+					<li><a href="./services.html">Tjänster</a></li>
+					<li class="active"><a href="./inspiration.html">Inspiration</a></li>
+					<li><a href="./about.html">Om mig</a></li>
+					<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
+				</ul>
+			</nav>
+
+			<div class="inspiration-hero">
+
+				<div class="inspiration-hero-left">
+					<h1>Lite av vad jag<br> kan erbjuda...</h1>
+					<p>	Lorem ipsum dolor sit amet consectetur. Interdum nunc integer
+						congue in ipsum nec senectus varius vitae. Consectetur eget 
+						vitae est bibendum urna ut.</p>
+				</div>
+
+				<div class="inspiration-hero-right">
+					<h1>[video]</h1>
+				</div>
+				
+			</div>
+			<!-- <header>
+				<h1>Work in progress</h1>
+				<h3>Come back soon</h3>
+			</header> -->
+		</div>
+
+
+		<!-- WORK SECTION -->
+		<div class="work-section">
+			<div class="work-sec-text">
+				<h2>Tidigare arbeten</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Quaerat veritatis, officia eius illum officiis animi enim.
+					Aperiam, enim! Quisquam, deserunt.</p>
+			</div>
+			
+			<div class="work-sec-images">
+				<img src="./images/work-sec-1.jpeg" alt="#" id="work-sec-1">
+				<img src="./images/work-sec-2.jpeg" alt="#" id="work-sec-2">
+				<!-- <img src="./images/work-sec-3.jpeg" alt="#" id="work-sec-3"> -->
+			</div>
+		</div>
+
+
+
+		<!-- CONTACT SECTION -->
+		<div class="contact-section">
+			<h2>Kontakta oss!</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Quaerat veritatis.</p>
+
+
+			<!-- CONTACT FORM -->
+			<div class="contact-form">
+
+				<form actions="#">
+					<div class="form-container">
+						<div class="input-box" id="input-name">
+							<!-- <label for="name">Namn:</label> -->
+							<input type="text" id="name" name="namn" placeholder="För- och efternamn">
+						</div>	
+
+						<div class="input-box" id="input-phone">
+							<!-- <label for="phone">Telefonnummer:</label> -->
+							<input type="tel" id="phone" name="phone" placeholder="Telefonnummer">
+						</div>
+
+						<div class="input-box" id="input-email">
+							<!-- <label for="email">Epost:</label> -->
+							<input type="email" id="email" name="email" placeholder="Epostadress">
+						</div>
+
+						<div class="input-box" id="input-message">
+							<!-- <label for="message">Meddelande:</label> -->
+							<textarea type="text" id="message" name="message" placeholder="Skriv här..."></textarea>
+						</div>	
+
+						<div class="button" id="input-submit">
+							<button type="submit">Skicka</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
 	</div>
+	
 
 
 	<footer>
@@ -40,3 +121,12 @@
 
 
 </body>
+
+
+
+
+
+
+
+
+
