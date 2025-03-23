@@ -55,10 +55,8 @@ body {
 /*======== BODY ========*/
 
 .grid-container {
-	/*width: 100vw;*/
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	/* grid-template-columns: repeat(auto-fit, minmax(300px, 1 fr)); */
 	background-color: #FEE3C8;
 }
 
@@ -69,54 +67,11 @@ body {
 	background-image: url(./images/carpenter-closeup-1.jpg);
 	background-position: center;
 	background-size: cover;
-
-	
 }
-
-	/* SIDEBAR */
-	/* .sidebar {
-		position: fixed;
-		top: 0;
-		right: 0;
-		height: 100vh;
-		width: 250px;
-		z-index: 999;
-		background-color: white;
-		box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		color: black;
-	}
-
-
-	.sidebar-links ul {
-		width: 100%;
-	}
-
-	.sidebar-links li {
-		height: 50px;
-		width: 100%;
-	}
-
-	.sidebar a{
-		color: black;
-		height: 100%;
-		padding: 0 30px;
-	}
-
-	.sidebar a:hover {
-		background-color: black;
-	} */
 
 	/*======== NAVBAR ========*/
 	.navbar {
-		/* grid-column: span 2; */
 		display: flex;
-		/* position: absolute;
-		top: 0;
-		left: 0; */
 		width: 100%;
 		height: 65px;
 		justify-content: space-between;
@@ -142,31 +97,31 @@ body {
 
 	.navbar img {
 		width: 200px;
-
 	}
 
-header {
-	text-align: center;
-	justify-content: center;
-}
+	/*======== HEADER ========*/
+	header {
+		text-align: center;
+		justify-content: center;
+	}
 
-header h1 {
-	font-size: 16vmin;
-	margin-bottom: 100px;
-	color: white;
-	padding-top: 13vh;
-}
+	header h1 {
+		font-size: 16vmin;
+		margin-bottom: 100px;
+		color: white;
+		padding-top: 13vh;
+	}
 
-.contact-button {
-	padding: 8px 15px;
-	background-color: #9B2915;
-	border-radius: 30px;
-	color: white;
-}
+	.contact-button {
+		padding: 8px 15px;
+		background-color: #9B2915;
+		border-radius: 30px;
+		color: white;
+	}
 
-.contact-button a:hover {
-	color: inherit;
-}
+	.contact-button a:hover {
+		color: inherit;
+	}
 
 	.image-column {
 		width: 100%;
@@ -188,39 +143,24 @@ header h1 {
 		font-size: 1em;
 	}
 
+	.text-column p {
+		padding: 8px 0 30px 0;
+	}
+
 	#welcome-column {
 		background-color: #9B2915;
 		color: #FEE3C8;
 	}
 
-	#about-column {
-		/* padding-left: 200px;
-		padding-right: 200px; */
-	}
-
-/* .welcome-section {
-
-	background-color: red;
-}
-
-.about-section {
-
-	background-color: yellow;
-} */
 
 
 /* MERIT SECTION*/
 .merit-section {
 	grid-column: 1 /-1;
 	background-color: #9B2915;
-
-	/* padding: 100px 0px;
-	margin: 100px 200px; */
 }
 
-	.merit-container {
-		
-		/* background-color: red; */
+	.merit-container {		
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin: 100px 0;
@@ -229,14 +169,12 @@ header h1 {
 	}
 
 		.merit-box {
-			/* background-color: green; */
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			margin: 0 35px;
 			/* padding: 30px; */
 			color: #FEE3C8;
-			
 		}
 
 		.merit-box img {
@@ -268,6 +206,9 @@ header h1 {
 }
 
 .work-sec-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 100px 100px 50px 100px;
 }
 
@@ -310,73 +251,85 @@ header h1 {
 	width: 70%;
 	max-width: 650px;
 	background-color: #9B2915;
-	/* display: flex; */
 	padding-bottom: 100px;
-	/* justify-content: center; */
-	/* align-items: center; */
 }
 
-.form-container {
-	/* width: 50%; */
-	/* margin: 0 350px; */
-	/* display: grid; */
-	/* grid-template-columns: 1fr 1fr; */
-}
+	.form-container {
+		/* width: 50%; */
+		/* margin: 0 350px; */
+		/* display: grid; */
+		/* grid-template-columns: 1fr 1fr; */
+	}
 
-.input-box input, textarea {
-	width: 100%;
-	height: 50px;
-	margin: 12px 0;
-	padding-left: 12px;
-	background: #FEE3C8;
-	border: none;
-	border-radius: 6px;
-	color: black;
-	font-family:"Poppins", sans-serif;
-}
+	.input-box input, textarea {
+		width: 100%;
+		height: 50px;
+		margin: 12px 0;
+		padding-left: 12px;
+		background: #FEE3C8;
+		border: none;
+		border-radius: 6px;
+		color: black;
+		font-family:"Poppins", sans-serif;
+	}
 
-#input-name, #input-phone, #input-email, #input-message {
-	margin: 0 8px;
-}
+	#input-name, #input-phone, #input-email, #input-message {
+		margin: 0 8px;
+	}
 
-#message {
-	padding-top: 12px;
-	height: 150px;
-}
+	#message {
+		padding-top: 12px;
+		height: 150px;
+	}
 
-/* #input-message textarea {
-	width: 100%;
-	height: 200px;
-	background-color: #FEE3C8;
-	border-radius: 6px;
+	#input-submit {
+		/* grid-column: span 2; */
+		padding-top: 12px;
+		margin: 0 auto;
+	}
 
-} */
-
-#input-submit {
-	/* grid-column: span 2; */
-	padding-top: 12px;
-	margin: 0 auto;
-}
-
-#input-submit button {
-	padding: 15px 50px;
-	border-radius: 30px;
-	border-color: #FEE3C8;
-	border-style: none;
-	background-color: #F18F01;
-	color: white;
-	font-family: "Poppins", sans-serif;
-	font-size: 18px;
-}
+	#input-submit button {
+		padding: 15px 50px;
+		border-radius: 30px;
+		border-color: #FEE3C8;
+		border-style: none;
+		background-color: #F18F01;
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-size: 18px;
+	}
 
 
 /*======== FOOTER ========*/
 
-footer {
+.footer {
+	grid-column: 1 / -1;
+	width: 100vw;
 	background-color: black;
 	color: white;
-	text-align: center;
 }
+
+.footer-container {
+	/* width: 70vw; */
+	margin: auto;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+	.footer-row {
+		width: 30%;
+	}
+
+	.footer-row h3 {
+		text-align: left;
+		padding-bottom: 16px;
+	}
+
+	.footer-row p {
+		padding: 0;
+	}
 
 
 
@@ -485,7 +438,8 @@ footer {
 
 .hero-section-inspiration {
 	grid-column: 1 / -1;
-	background-image: url(./images/carpenter-closeup-1.jpg);		background-position: center;
+	background-image: url(./images/carpenter-closeup-1.jpg);
+	background-position: center;
 	background-size: cover;
 	height: 70vh;
 }
@@ -517,6 +471,12 @@ footer {
 	padding: 100px;
 	margin: 100px auto;
 	background-color: white;
+}
+
+.work-sec-text {
+	width: 70vw;
+	margin: 0 auto;
+	text-align: left;
 }
 
 
@@ -569,6 +529,88 @@ footer {
 
 
 
+/*======== CONTACT ========*/
+.hero-section-contact {
+	grid-column: 1 / -1;
+	background-image: url(./images/carpenter-closeup-1.jpg);		background-position: center;
+	background-size: cover;
+	height: 70vh;
+}
+
+.contact-hero {
+	width: 100vw;
+	height: calc(70vh - 65px);
+	background-color:#9B2915;
+	color:#FEE3C8;
+	border-radius: 30px 30px 0 0;
+}
+
+.contact-hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-around;
+	height: 50vh;
+	width: 50%;
+	margin: auto;
+}
+
+.contact-hero-button {
+	padding: 15px 50px;
+	border-radius: 30px;
+	border-color: #FEE3C8;
+	border-style: none;
+	background-color: #F18F01;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+}
+
+
+/* .contact-info-section {
+	grid-column: 1 / -1;
+	height: 50vh;
+	max-height: 100vh;
+	display: flex;
+} */
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 50vw;
+	padding: 100px 120px;
+	margin: auto;
+}
+
+.contact-info-adress, .contact-info-details {
+	width: auto;
+}
+
+.contact-info h2 {
+	text-align: left;
+}
+
+.contact-map {
+	min-width: 50vw;
+	padding: 30px;
+	margin: auto;
+}
+
+.contact-map img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
+	/* filter: brightness(0) saturate(100%) invert(76%) sepia(88%) saturate(86%) hue-rotate(342deg) brightness(101%) contrast(99%); */
+}
+
+
+
+
+
+
 
 
 
@@ -580,6 +622,10 @@ footer {
 	
 	.navbar-links li {
 		margin: 0 20px;
+	}
+
+	.text-column {
+		padding: 30px 80px;
 	}
 
 }
@@ -648,7 +694,16 @@ footer {
 			margin: 10px;
 		}
 
+		/* FOOTER */
+		.footer-container {
+			flex-direction: column;
+			padding: 50px 0;
+		}
 
+		.footer-row {
+			margin: 0 auto;
+			padding-bottom: 30px;
+		}
 
 	/*======== ABOUT ========*/
 	.about-hero-left {
@@ -661,4 +716,67 @@ footer {
 	}
 
 
+	/*======== INSPIRATION ========*/
+	.inspiration-hero {
+		flex-direction: column;
+		height: fit-content;
+	}
+
+	.inspiration-hero-left, .inspiration-hero-right {
+		width: auto;
+	}
+
+
+
+
+	/*======== CONTACT ========*/
+	.contact-info {
+		width: 100vw;
+		padding: 100px;
+		margin: 0 auto;
+		
+	}
+
+}
+
+@media print {
+
+	* {
+		background: none;
+		color: black;
+	}
+
+	/* .hero-section-contact {
+		display: none !important;
+	} */
+
+	/*TEST*/
+	.hero-section-contact {
+		height: 65px;
+	}
+
+	.navbar img {
+		filter: brightness(0) saturate(100%);
+	}
+
+	.navbar-links {
+		display: none;
+	}
+
+	.contact-hero {
+		display: none;
+	}
+	/*SLUT TEST*/
+
+
+
+
+	.contact-section {
+		display: none !important;
+	}
+
+	.footer {
+		position: absolute;
+		bottom: 0;
+	}
 }
