@@ -254,12 +254,12 @@ body {
 	padding-bottom: 100px;
 }
 
-	.form-container {
-		/* width: 50%; */
-		/* margin: 0 350px; */
-		/* display: grid; */
-		/* grid-template-columns: 1fr 1fr; */
-	}
+	/* .form-container {
+		width: 50%;
+		margin: 0 350px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	} */
 
 	.input-box input, textarea {
 		width: 100%;
