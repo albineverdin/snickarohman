@@ -468,9 +468,8 @@ body {
 .inspiration-hero-right {
 	width: 40vw;
 	height: 40vh;
-	padding: 100px;
+	/* padding: 100px; */
 	margin: 100px auto;
-	background-color: white;
 }
 
 .work-sec-text {
