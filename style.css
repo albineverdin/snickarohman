@@ -602,7 +602,6 @@ body {
 	object-fit: cover;
 	object-position: center;
 
-	/* filter: brightness(0) saturate(100%) invert(76%) sepia(88%) saturate(86%) hue-rotate(342deg) brightness(101%) contrast(99%); */
 }
 
 
