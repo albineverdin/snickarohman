@@ -428,6 +428,30 @@ body {
 		background-color: #FEE3C8;
 		color: black;
 	}
+
+
+	/*======== TEMPORARY TABLE ========*/
+	table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #FEE3C8;
+        color: #9B2915;
+     }
+
+    tr:nth-child(even) {
+            background-color: #f2f2f21A;
+
+	}
 	
 
 
@@ -486,7 +510,8 @@ body {
 
 .hero-section-about {
 	grid-column: 1 / -1;
-	background-image: url(./images/carpenter-closeup-1.jpg);		background-position: center;
+	background-image: url(./images/carpenter-closeup-1.jpg);		
+	background-position: center;
 	background-size: cover;
 	height: 100vh;
 }
@@ -531,7 +556,8 @@ body {
 /*======== CONTACT ========*/
 .hero-section-contact {
 	grid-column: 1 / -1;
-	background-image: url(./images/carpenter-closeup-1.jpg);		background-position: center;
+	background-image: url(./images/carpenter-closeup-1.jpg);		
+	background-position: center;
 	background-size: cover;
 	height: 70vh;
 }
