@@ -1,0 +1,43 @@
+@import url("sections/banner.css");
+
+* {
+	margin: 0;
+}
+
+.navbar {
+	padding: 20px;
+	background-color: grey;
+}
+
+.hero {
+	height: 100vh;
+	background-image: url(/images/carpenter-closeup-1.jpg);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 'left right';
+
+}
+
+.grid-left, .grid-right {
+	height: 300px;
+}
+
+.grid-left {
+	grid-area: left;
+}
+
+.grid-right {
+	grid-area: right;
+}
+
+.footer {
+	background-color: black;
+	padding: 10px;
+
+}
+
+.footer p{
+	color:white;
+}

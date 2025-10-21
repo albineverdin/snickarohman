@@ -1,0 +1,818 @@
+/*@import url("sections/banner.css");*/
+/*@import url("sections/palettes.css");*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*======== GENERAL ========*/
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	p, a {
+		font-family: "Poppins", sans-serif;
+	}
+
+	h1, h2, h3, h4 {
+		font-family: "Playfair Display", serif;
+	}
+
+	a {
+		text-decoration: none;
+
+	}
+
+	a:link {
+		text-decoration: none;
+		color: white;
+
+	}
+
+	a:visited {
+		text-decoration: none;
+		color: white;
+	}
+
+	.navbar a:hover {
+		color: #9B2915;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	
+
+/*======== HERO SECTION =========*/
+
+body {
+	background-image: url(./images/carpenter-closeup-1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+/*======== BODY ========*/
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: #FEE3C8;
+}
+
+.hero-section-home {
+	grid-column: 1 / -1;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(./images/carpenter-closeup-1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+	/*======== NAVBAR ========*/
+	.navbar {
+		display: flex;
+		width: 100%;
+		height: 65px;
+		justify-content: space-between;
+		padding: 0 10vw;
+		color: white;
+	}
+
+	.navbar-links {
+		display: flex;
+		align-items: center;
+	}
+
+	.navbar-links li {
+		margin: 0 30px;
+	}
+
+	.navbar-active {
+		color: #9B2915;
+		text-decoration: underline 2px;
+		text-underline-offset: 10px;
+		font-weight: bold;
+	}
+
+	.navbar img {
+		width: 200px;
+	}
+
+	/*======== HEADER ========*/
+	header {
+		text-align: center;
+		justify-content: center;
+	}
+
+	header h1 {
+		font-size: 16vmin;
+		margin-bottom: 100px;
+		color: white;
+		padding-top: 13vh;
+	}
+
+	.contact-button {
+		padding: 8px 15px;
+		background-color: #9B2915;
+		border-radius: 30px;
+		color: white;
+	}
+
+	.contact-button a:hover {
+		color: inherit;
+	}
+
+	.image-column {
+		width: 100%;
+		height: 50vh;
+	}
+
+	.image-column img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 50vh;
+	}
+
+	.text-column {
+		width: 100%;
+		height: 50vh;
+		padding: 60px 100px;
+		overflow: hidden;
+		font-size: 1em;
+	}
+
+	.text-column p {
+		padding: 8px 0 30px 0;
+	}
+
+	#welcome-column {
+		background-color: #9B2915;
+		color: #FEE3C8;
+	}
+
+
+
+/* MERIT SECTION*/
+.merit-section {
+	grid-column: 1 /-1;
+	background-color: #9B2915;
+}
+
+	.merit-container {		
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 100px 0;
+		justify-content: space-around;
+		padding: 0 70px;
+	}
+
+		.merit-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 35px;
+			/* padding: 30px; */
+			color: #FEE3C8;
+		}
+
+		.merit-box img {
+			width: 60px;
+			height: 60px;
+			filter: invert(95%) sepia(7%) saturate(2137%) hue-rotate(307deg) brightness(95%) contrast(131%);
+			/* padding: 30px; */
+		}
+
+		.merit-box h2 {
+			padding-top: 0;
+		}
+
+		.merit-box p {
+			padding-top: 16px;
+			text-align: justify;
+		}
+
+
+
+/*======== WORK SECTION ========*/
+.work-section {
+	width: 100vw;
+	max-height: 100vh;
+	background-color: #FEE3C8;
+	grid-column: 1 / -1;
+	text-align:center;
+	color: black;
+}
+
+.work-sec-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 100px 50px 100px;
+}
+
+
+.work-sec-images img {
+	object-fit: cover;
+	object-position: center;
+	height: 50vh;
+	width: 50vw;
+}
+
+.work-sec-images {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+
+
+/*======== CONTACT SECTION ========*/
+.contact-section {
+	width: 100vw;
+	background-color: #9B2915;
+	grid-column: 1 / -1;
+	text-align:center;
+	color: #FEE3C8;
+	padding: 100px;
+}
+
+.contact-section h2, p {
+	padding-bottom: 15px;
+}
+
+
+/*======== CONTACT FORM ========*/
+.contact-form {
+	grid-column: 1 / -1;
+	margin: auto;
+	padding-top: 15px;
+	width: 70%;
+	max-width: 650px;
+	background-color: #9B2915;
+	padding-bottom: 100px;
+}
+
+	/* .form-container {
+		width: 50%;
+		margin: 0 350px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	} */
+
+	.input-box input, textarea {
+		width: 100%;
+		height: 50px;
+		margin: 12px 0;
+		padding-left: 12px;
+		background: #FEE3C8;
+		border: none;
+		border-radius: 6px;
+		color: black;
+		font-family:"Poppins", sans-serif;
+	}
+
+	#input-name, #input-phone, #input-email, #input-message {
+		margin: 0 8px;
+	}
+
+	#message {
+		padding-top: 12px;
+		height: 150px;
+	}
+
+	#input-submit {
+		/* grid-column: span 2; */
+		padding-top: 12px;
+		margin: 0 auto;
+	}
+
+	#input-submit button {
+		padding: 15px 50px;
+		border-radius: 30px;
+		border-color: #FEE3C8;
+		border-style: none;
+		background-color: #F18F01;
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-size: 18px;
+	}
+
+
+/*======== FOOTER ========*/
+
+.footer {
+	grid-column: 1 / -1;
+	width: 100vw;
+	background-color: black;
+	color: white;
+}
+
+.footer-container {
+	/* width: 70vw; */
+	margin: auto;
+	padding: 50px 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+	.footer-row {
+		width: 30%;
+	}
+
+	.footer-row h3 {
+		text-align: left;
+		padding-bottom: 16px;
+	}
+
+	.footer-row p {
+		padding: 0;
+	}
+
+
+
+
+/*======== SERVICES ========*/
+
+	/*===== HERO =====*/
+	.hero-section-services {
+		grid-column: 1 / -1;
+		background-image: url(./images/carpenter-closeup-1.jpg);
+		background-position: center;
+		background-size: cover;
+		height: 70vh;
+	}
+
+	.services-hero {
+		background-color:#9B2915;
+		color: #FEE3C8;
+		padding: 70px 100px;
+		height: calc(70vh - 65px);
+		width: 100vw;
+		border-radius: 30px 30px 0 0;
+	}
+
+	.services-hero-quote {
+		margin: auto;
+		width: 50%;
+	}
+
+	.services-hero-quote img {
+		height: 100px;
+		opacity: 0.15;
+		filter: brightness(0) saturate(100%) invert(60%) sepia(88%) saturate(3808%) hue-rotate(13deg) brightness(110%) contrast(99%);
+	}
+
+	#quote-top {
+		position: relative;
+		top: 100px;
+		left: -100px;
+		transform: rotate(180deg);
+	}
+
+	/* #quote-bottom {
+		position: relative;
+		top: -50px;
+		right: 0;
+	} */
+
+
+	/*===== SERVICES LIST =====*/
+	.services-list-section {
+		padding: 100px 0;
+		background-color: hsl(0, 100, 27); 
+		grid-column: 1 / -1;
+		color: black;
+	}
+
+	.services-list-section h1 {
+		text-align: center;
+	}
+
+	.list-section-container {
+		width: 50%;
+		margin: auto;
+		/* margin: auto; */
+	}
+
+	.list-section-container h2 {
+		padding-top: 30px;
+		text-align: end;
+		color:#F18F01;
+	}
+
+	.list-container {
+		margin-top: 60px;
+		display: flex;
+		align-items:center;
+		justify-content: space-between;
+	}
+
+	.list-div {
+		display: flex;
+		align-items: center;
+	}
+
+	.list-div li {
+		font-family: "Poppins", sans-serif;
+	}
+
+	#rot1 {
+		background-color: hsl(0, 100, 10);
+		color: #FEE3C8;
+	}
+
+	#rot2 {
+		background-color: #FEE3C8;
+		color: black;
+	}
+
+
+
+
+
+
+
+
+	/*======== TEMPORARY TABLE ========*/
+	table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #FEE3C8;
+        color: #9B2915;
+     }
+
+    tr:nth-child(even) {
+            background-color: #f2f2f21A;
+
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======== INSPIRATION ========*/
+
+.hero-section-inspiration {
+	grid-column: 1 / -1;
+	background-image: url(./images/carpenter-closeup-1.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+}
+
+.inspiration-hero {
+	height: calc(70vh - 65px);
+	background-color:#9B2915;
+	color:#FEE3C8;
+	border-radius: 30px 30px 0 0;
+	display: flex;
+}
+
+.inspiration-hero-left {
+	width: 50vw;
+	padding: 100px;
+}
+
+.inspiration-hero-left p, h1 {
+	padding-top: 30px;
+}
+
+.inspiration-hero-left h1 {
+	text-align: left;
+}
+
+.inspiration-hero-right {
+	width: 40vw;
+	height: 40vh;
+	/* padding: 100px; */
+	margin: 100px auto;
+}
+
+.work-sec-text {
+	width: 70vw;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+
+
+
+/*======== ABOUT ========*/
+
+.hero-section-about {
+	grid-column: 1 / -1;
+	background-image: url(./images/carpenter-closeup-1.jpg);		
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.about-hero {
+	height: calc(100vh - 65px);
+	background-color:#FEE3C8;
+	color:black;
+	border-radius: 30px 30px 0 0;
+	display: flex;
+}
+
+.about-hero-left {
+	width: 50vw;
+	padding: 50px 50px 0 50px;
+	margin: 0 auto;
+}
+
+.about-hero-left img{
+	height: 100%;
+	position: relative;
+	bottom: 0;
+}
+
+.about-hero-right {
+	width: 50vw;
+	padding: 50px;
+}
+
+.about-hero-right h1 {
+	font-size: 48px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.about-hero-right p {
+	padding-top: 12px;
+}
+
+
+
+/*======== CONTACT ========*/
+.hero-section-contact {
+	grid-column: 1 / -1;
+	background-image: url(./images/carpenter-closeup-1.jpg);		
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+}
+
+.contact-hero {
+	width: 100vw;
+	height: calc(70vh - 65px);
+	background-color:#9B2915;
+	color:#FEE3C8;
+	border-radius: 30px 30px 0 0;
+}
+
+.contact-hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-around;
+	height: 50vh;
+	width: 50%;
+	margin: auto;
+}
+
+.contact-hero-button {
+	padding: 15px 50px;
+	border-radius: 30px;
+	border-color: #FEE3C8;
+	border-style: none;
+	background-color: #F18F01;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+}
+
+
+/* .contact-info-section {
+	grid-column: 1 / -1;
+	height: 50vh;
+	max-height: 100vh;
+	display: flex;
+} */
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 50vw;
+	padding: 100px 120px;
+	margin: auto;
+}
+
+.contact-info-adress, .contact-info-details {
+	width: auto;
+}
+
+.contact-info h2 {
+	text-align: left;
+}
+
+.contact-map {
+	min-width: 50vw;
+	padding: 30px;
+	margin: auto;
+}
+
+.contact-map img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
+}
+
+
+
+
+
+
+
+
+
+/*======== WORK IN PROGRESS ========*/
+
+
+
+@media only screen and (max-width: 1200px){
+	
+	.navbar-links li {
+		margin: 0 20px;
+	}
+
+	.text-column {
+		padding: 30px 80px;
+	}
+
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 850px) {
+
+	.navbar-links{
+		display: none;
+	}
+
+	/* .navbar-links {
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 999;
+		width: 300px;
+		background-color: black;
+	}
+
+	.navbar-links a{
+		box-sizing: border-box;
+		height: auto;
+		width: 100%;
+		/* padding: 20px 30px; */
+	/* } */
+
+
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+
+
+	.image-column {
+		width: 100vw;
+	}
+
+
+
+	.merit-container {
+		
+		/* background-color: red; */
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin: 50px 50px;
+		justify-content: space-around;
+		padding: 0px 0;
+	}
+
+		.merit-box {
+			/* background-color: green; */
+			display: flex;
+			/* align-items: baseline; */
+			flex-direction: column;
+			justify-content: space-around;
+			/* grid-template-rows: 1 / -1; */
+			align-items: center;
+			margin: 0 60px;
+			padding: 30px 0;
+			color: #FEE3C8;
+		}
+
+		.merit-box img {
+			margin: 10px;
+		}
+
+		/* FOOTER */
+		.footer-container {
+			flex-direction: column;
+			padding: 50px 0;
+		}
+
+		.footer-row {
+			margin: 0 auto;
+			padding-bottom: 30px;
+		}
+
+	/*======== ABOUT ========*/
+	.about-hero-left {
+		display: none;
+	}
+
+	.about-hero-right {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+
+	/*======== INSPIRATION ========*/
+	.inspiration-hero {
+		flex-direction: column;
+		height: fit-content;
+	}
+
+	.inspiration-hero-left, .inspiration-hero-right {
+		width: auto;
+	}
+
+
+
+
+	/*======== CONTACT ========*/
+	.contact-info {
+		width: 100vw;
+		padding: 100px;
+		margin: 0 auto;
+		
+	}
+
+}
+
+
+
+
+
+
+@media print {
+
+	* {
+		background: none;
+		color: black;
+	}
+
+	.hero-section-contact {
+		height: 65px;
+	}
+
+	.navbar img {
+		filter: brightness(0) saturate(100%);
+	}
+
+	.navbar-links {
+		display: none;
+	}
+
+	.contact-hero {
+		display: none;
+	}
+
+	.contact-section {
+		display: none !important;
+	}
+
+	.footer {
+		position: absolute;
+		bottom: 0;
+	}
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<HTML lang="sv">
+
+<!-- Metadata -->
+<head>
+	<title>SnickarÖhmans hemsida</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="SnickarÖhmans företagssida">
+	<meta name="keywords" content="XXX">
+	<meta name="author" content="Albin Everdin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/79c2b5da0f.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+	<!-- MAIN BODY -->
+	<div class="grid-container">
+
+		<!-- HERO SECTION -->
+		<div class="hero-section-home">
+	
+			<!-- NAVBAR -->
+			<nav class="navbar">
+				<a href="./index.html">
+					<img src="images/snickarohman-white.png" alt="SnickarÖhmans logga">
+				</a>
+				<ul class="navbar-links">
+					<li class="navbar-active"><a href="#">Hem</a></li>
+					<li><a href="./services.html">Tjänster</a></li>
+					<li><a href="./inspiration.html">Inspiration</a></li>
+					<li><a href="./about.html">Om mig</a></li>
+					<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
+				</ul>
+			</nav>
+
+			<!-- HERO HEADER -->
+			<header>
+				<h1>
+					Anlita en<br>expert?
+				</h1>
+				<a href="#" class="contact-button">Kontakta mig!</a>
+			</header>
+		</div>
+
+		<!-- WELCOME SECTION-->	
+
+			<!-- WELCOME TEXT -->
+			<div class="text-column" id="welcome-column">
+				<h1>Välkommen hit!</h1>
+				<p>	Det är jag som är SnickarÖhman, din lokala expert vad gäller
+					finsnickeri, renovering, och mycket annat! Jag har en lång 
+					historia inom denna bransch med min egna firma och bred 
+					erfarenhet.
+				</p>
+			</div>
+
+			<!-- WELCOME IMAGE -->
+			<div class="image-column">
+				<img src="/images/carpenter-closeup-2.jpg" alt="Närbild på snickare">
+			</div>
+
+		<!-- ABOUT SECTION -->
+			<div class="text-column" id="about-column">
+				<h1>Tjänster & utbud</h1>
+				<p>	Jag kan erbjuda dig stor mängd olika tjänster så tveka inte
+					att höra av dig ifall du vill förverkliga en dröm, mest
+					sannolikt kan jag hjälpa just dig.<br>
+				</p>
+				<a href="./services.html" class="contact-button">Mina tjänster</a>
+			</div>
+
+			<div class="image-column">
+				<img src="/images/workstation.jpg" alt="Närbild på arbetsbänk">
+			</div>
+
+		<!-- MERIT SECTION -->
+		<div class="merit-section">
+			<div class="merit-container">
+				<div class="merit-box">
+					<img src="./images/home-01-stroke-rounded.svg" alt="Ikon, glatt hus">
+					<div class="merit-text">
+						<h2>Merit 1</h2>
+						<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Neque delectus deserunt laborum dicta impedit reprehenderit
+							perspiciatis dolorem, quo perferendis atque!</p>
+					</div>
+				</div>
+				<div class="merit-box">
+					<img src="./images/wrench-01-stroke-rounded.svg" alt="Ikon, verktyg">
+					<div class="merit-text">
+						<h2>Merit 2</h2>
+						<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Neque delectus deserunt laborum dicta impedit reprehenderit
+							perspiciatis dolorem, quo perferendis atque!</p>
+					</div>
+					
+				</div>
+				<div class="merit-box">
+					<img src="./images/agreement-02-stroke-rounded.svg" alt="Ikon, skakande händer">
+					<div class="merit-text">
+						<h2>Merit 3</h2>
+						<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Neque delectus deserunt laborum dicta impedit reprehenderit
+							perspiciatis dolorem, quo perferendis atque!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- WORK SECTION -->
+		<div class="work-section">
+
+			<!-- WORK TEXT -->
+			<div class="work-sec-text">
+				<h2>Tidigare arbeten</h2>
+				<p>	Här är ett axplock av några tidigare arbeten jag gjort som
+					SnickarÖhman. Kika gärna igenom dessa arbeten, vill du se mer
+					kan du kolla in inspirations-fliken!
+				</p>
+				<a href="./inspiration.html" class="contact-button">Mer inspiration!</a>
+			</div>
+			
+			<!-- WORK IMAGE -->
+			<div class="work-sec-images">
+				<img src="./images/work-sec-1.jpeg" alt="Bild på arbetsplats inomhus" id="work-sec-1">
+				<img src="./images/work-sec-2.jpeg" alt="Bild på arbetsplats utomhus" id="work-sec-2">
+				<!-- <img src="./images/work-sec-3.jpeg" alt="#" id="work-sec-3"> -->
+			</div>
+		</div>
+
+
+		<!-- CONTACT SECTION -->
+		<div class="contact-section">
+			<h2>Kontakta oss!</h2>
+			<p>Släng iväg ett meddelande med ditt projekt så ser vi vad vi kan göra!</p>
+
+
+			<!-- CONTACT FORM -->
+			<div class="contact-form">
+
+				<form action="mailto:everdin.albin@gmail.com" method="post" enctype="text/plain">
+					<div class="form-container">
+						<div class="input-box" id="input-name">
+							<!-- <label for="name">Namn:</label> -->
+							<input type="text" id="name" name="namn" placeholder="För- och efternamn">
+						</div>	
+		
+						<div class="input-box" id="input-phone">
+							<!-- <label for="phone">Telefonnummer:</label> -->
+							<input type="tel" id="phone" name="phone" placeholder="Telefonnummer">
+						</div>
+		
+						<div class="input-box" id="input-email">
+							<!-- <label for="email">Epost:</label> -->
+							<input type="email" id="email" name="email" placeholder="Epostadress">
+						</div>
+		
+						<div class="input-box" id="input-message">
+							<!-- <label for="message">Meddelande:</label> -->
+							<textarea id="message" name="message" placeholder="Skriv här..."></textarea>
+						</div>	
+		
+						<div class="button" id="input-submit">
+							<button type="submit">Skicka</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-row" id="footer-contact">
+					<h3>Kontakta mig!</h3>
+					<p>070 - 123 45 67</p>
+					<p>foretag @ mail.se</p>
+				</div>
+				<div class="footer-row" id="footer-findme">
+					<h3>Hitta mig!</h3>
+					<p>Adressvägen 1</p>
+					<p>987 65 Stad</p>
+				</div>
+				<div class="footer-row" id="footer-nav">
+					<h3>Navigera</h3>
+					<ul class="footer-links">
+						<li><a href="./index.html">Hem</a></li>
+						<li><a href="./services.html">Tjänster</a></li>
+						<li><a href="./inspiration.html">Inspiration</a></li>
+						<li><a href="./about.html">Om mig</a></li>
+						<li><a href="./contact.html">Kontakta mig</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

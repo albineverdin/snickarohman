@@ -1,0 +1,111 @@
+.footer {
+    width: 100%;
+    background-color: var(--text-dark50);
+    color: var(--color-light100);
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.footer__logo-wrapper img {
+    display: block;
+    max-width: 300px;
+    position: relative;
+    filter: invert(99%) sepia(1%) saturate(1926%) hue-rotate(321deg) brightness(99%) contrast(97%);
+
+}
+
+.footer__logo-image {
+    width: 100%;
+    filter: invert(99%) sepia(1%) saturate(1926%) hue-rotate(321deg) brightness(99%) contrast(97%);
+
+}
+
+
+.footer__socials-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;}
+
+.footer__social-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(99%) sepia(1%) saturate(1926%) hue-rotate(321deg) brightness(99%) contrast(97%);
+    cursor: pointer;
+}
+
+.footer__copyright-text {
+    font-size: 0.8rem;
+    color: var(--text-light900);
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.footer__menu a {
+    color: var(--text-light950);
+    text-decoration: none;
+    margin: 5px 0;
+    text-align: left;
+}
+
+
+
+
+.footer__menu-list-wrapper {
+    color: var(--text-light950);
+    list-style: none;
+}
+
+.footer__menu-title {
+    color: var(--text-light950);
+    font-family: var(--Montserrat);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer__menu-list {
+    margin-top: 0.5rem;
+    list-style: none;
+    /* text-transform: uppercase; */
+    font-size: 0.8rem;
+}
+
+.footer__menu-list a:hover {
+    color: var(--primary100);
+    transition-duration: 400ms;
+}
+
+.footer__menu-item {
+    font-family: var(--Montserrat);
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.3rem;
+}
+
+
+.footer__menu-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    filter: invert(99%) sepia(1%) saturate(1926%) hue-rotate(321deg) brightness(99%) contrast(97%);
+}

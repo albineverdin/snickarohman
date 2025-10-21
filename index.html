@@ -1,201 +1,208 @@
 <!DOCTYPE html>
 
-<HTML lang="sv">
+<html lang="sv">
 
 <!-- Metadata -->
 <head>
-	<title>SnickarÖhmans hemsida</title>
+    <title>SnickarÖhmans hemsida</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="SnickarÖhmans företagssida">
 	<meta name="keywords" content="XXX">
 	<meta name="author" content="Albin Everdin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://kit.fontawesome.com/79c2b5da0f.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="./images/logo__icon--black.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
 </head>
 
 
-
 <body>
-	<!-- MAIN BODY -->
-	<div class="grid-container">
-
-		<!-- HERO SECTION -->
-		<div class="hero-section-home">
-	
-			<!-- NAVBAR -->
-			<nav class="navbar">
-				<a href="./index.html">
-					<img src="images/snickarohman-white.png" alt="SnickarÖhmans logga">
-				</a>
-				<ul class="navbar-links">
-					<li class="navbar-active"><a href="#">Hem</a></li>
+    <header>
+        <nav class="header__navbar">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./images/snickarohman-white.png" alt="SnickarÖhmans logga">
+                </a>
+            </div>
+            
+            <ul class="header__menu">
+					<li class="header__menu--active"><a href="#">Hem</a></li>
 					<li><a href="./services.html">Tjänster</a></li>
 					<li><a href="./inspiration.html">Inspiration</a></li>
 					<li><a href="./about.html">Om mig</a></li>
 					<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
-				</ul>
-			</nav>
+			</ul>
+        </nav>
+    </header>
 
-			<!-- HERO HEADER -->
-			<header>
-				<h1>
-					Anlita en<br>expert?
-				</h1>
-				<a href="#" class="contact-button">Kontakta mig!</a>
-			</header>
-		</div>
+    <div class="hero">
+        <div class="hero__video-container">
+            <div class="hero__video-container--overlay"></div>
+            <video autoplay muted loop class="hero__video">
+                <source src="./videos/hero__background-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    
 
-		<!-- WELCOME SECTION-->	
+    <section class="cs-test">
+        <div class="cs__container">
+            <div class="cs__image">
+                <img src="./images/img-1.jpg" alt="Test image">
+            </div>
+            <div class="cs__content">
+                <span class="cs__title-topper">Välkommen till</span>
+                <h1 class="cs__title">Snickaröhman</h1>
+                <!-- <h1 class="cs__title">Ditt lokala proffs</h1> -->
 
-			<!-- WELCOME TEXT -->
-			<div class="text-column" id="welcome-column">
-				<h1>Välkommen hit!</h1>
-				<p>	Det är jag som är SnickarÖhman, din lokala expert vad gäller
-					finsnickeri, renovering, och mycket annat! Jag har en lång 
-					historia inom denna bransch med min egna firma och bred 
-					erfarenhet.
-				</p>
-			</div>
+                <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
+                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
+                    totam nemo excepturi voluptatibus praesentium cupiditate 
+                    nesciunt?
+                </p>
+                <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
+                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
+                    totam nemo excepturi voluptatibus praesentium cupiditate 
+                    nesciunt?
+                </p>
 
-			<!-- WELCOME IMAGE -->
-			<div class="image-column">
-				<img src="/images/carpenter-closeup-2.jpg" alt="Närbild på snickare">
-			</div>
+                <div class="cs__button">
+                    <a href="#">Mer om mig!</a>
+                </div>
 
-		<!-- ABOUT SECTION -->
-			<div class="text-column" id="about-column">
-				<h1>Tjänster & utbud</h1>
-				<p>	Jag kan erbjuda dig stor mängd olika tjänster så tveka inte
-					att höra av dig ifall du vill förverkliga en dröm, mest
-					sannolikt kan jag hjälpa just dig.<br>
-				</p>
-				<a href="./services.html" class="contact-button">Mina tjänster</a>
-			</div>
-
-			<div class="image-column">
-				<img src="/images/workstation.jpg" alt="Närbild på arbetsbänk">
-			</div>
-
-		<!-- MERIT SECTION -->
-		<div class="merit-section">
-			<div class="merit-container">
-				<div class="merit-box">
-					<img src="./images/home-01-stroke-rounded.svg" alt="Ikon, glatt hus">
-					<div class="merit-text">
-						<h2>Merit 1</h2>
-						<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Neque delectus deserunt laborum dicta impedit reprehenderit
-							perspiciatis dolorem, quo perferendis atque!</p>
-					</div>
-				</div>
-				<div class="merit-box">
-					<img src="./images/wrench-01-stroke-rounded.svg" alt="Ikon, verktyg">
-					<div class="merit-text">
-						<h2>Merit 2</h2>
-						<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Neque delectus deserunt laborum dicta impedit reprehenderit
-							perspiciatis dolorem, quo perferendis atque!</p>
-					</div>
-					
-				</div>
-				<div class="merit-box">
-					<img src="./images/agreement-02-stroke-rounded.svg" alt="Ikon, skakande händer">
-					<div class="merit-text">
-						<h2>Merit 3</h2>
-						<p>	Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Neque delectus deserunt laborum dicta impedit reprehenderit
-							perspiciatis dolorem, quo perferendis atque!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- WORK SECTION -->
-		<div class="work-section">
-
-			<!-- WORK TEXT -->
-			<div class="work-sec-text">
-				<h2>Tidigare arbeten</h2>
-				<p>	Här är ett axplock av några tidigare arbeten jag gjort som
-					SnickarÖhman. Kika gärna igenom dessa arbeten, vill du se mer
-					kan du kolla in inspirations-fliken!
-				</p>
-				<a href="./inspiration.html" class="contact-button">Mer inspiration!</a>
-			</div>
-			
-			<!-- WORK IMAGE -->
-			<div class="work-sec-images">
-				<img src="./images/work-sec-1.jpeg" alt="Bild på arbetsplats inomhus" id="work-sec-1">
-				<img src="./images/work-sec-2.jpeg" alt="Bild på arbetsplats utomhus" id="work-sec-2">
-				<!-- <img src="./images/work-sec-3.jpeg" alt="#" id="work-sec-3"> -->
-			</div>
-		</div>
+            </div>
+            
+        </div>
+    </section>
 
 
-		<!-- CONTACT SECTION -->
-		<div class="contact-section">
-			<h2>Kontakta oss!</h2>
-			<p>Släng iväg ett meddelande med ditt projekt så ser vi vad vi kan göra!</p>
+
+    <section class="cs-test" id="cs__merits">
+        <div class="cs__container>">
+            <ul class="merits__card-container">
+                <li class="merits__card">
+                    <img src="images/icon__saw.svg" alt="Icon of a saw" class="merits__card-icon">
+                    <h2 class="merits__card--number">10+</h2>
+                    <p class="merits__card--text">Års erfarenhet</p>
+                </li>
+                <li class="merits__card">
+                    <img src="images/icon__handshake.svg" alt="Icon of a medal" class="merits__card-icon">
+                    <h2 class="merits__card--number">500+</h2>
+                    <p class="merits__card--text">Nöjda kunder</p>
+                </li>
+                <li class="merits__card">
+                    <img src="images/icon__medal.svg" alt="Icon of shaking hands" class="merits__card-icon">
+                    <h2 class="merits__card--number">1000+</h2>
+                    <p class="merits__card--text">Slutförda projekt</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
-			<!-- CONTACT FORM -->
-			<div class="contact-form">
+    <section class="cs-test" id="cs__services">
+        <span class="cs__title-topper">Vad jag kan göra</span>
+        <h1 class="cs__title">Några av mina tjänster</h1>
 
-				<form action="mailto:everdin.albin@gmail.com" method="post" enctype="text/plain">
-					<div class="form-container">
-						<div class="input-box" id="input-name">
-							<!-- <label for="name">Namn:</label> -->
-							<input type="text" id="name" name="namn" placeholder="För- och efternamn">
-						</div>	
-		
-						<div class="input-box" id="input-phone">
-							<!-- <label for="phone">Telefonnummer:</label> -->
-							<input type="tel" id="phone" name="phone" placeholder="Telefonnummer">
-						</div>
-		
-						<div class="input-box" id="input-email">
-							<!-- <label for="email">Epost:</label> -->
-							<input type="email" id="email" name="email" placeholder="Epostadress">
-						</div>
-		
-						<div class="input-box" id="input-message">
-							<!-- <label for="message">Meddelande:</label> -->
-							<textarea id="message" name="message" placeholder="Skriv här..."></textarea>
-						</div>	
-		
-						<div class="button" id="input-submit">
-							<button type="submit">Skicka</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
+        <div class="services__card-wrapper">
+            <div class="services__card">
+                <img src="./images/icon__sauna.svg" alt="Icon of a house" class="services__card-icon">
+                <h2 class="services__card-title">Bastu</h2>
+                <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
 
-		<!-- FOOTER -->
-		<div class="footer">
-			<div class="footer-container">
-				<div class="footer-row" id="footer-contact">
-					<h3>Kontakta mig!</h3>
-					<p>070 - 123 45 67</p>
-					<p>foretag @ mail.se</p>
-				</div>
-				<div class="footer-row" id="footer-findme">
-					<h3>Hitta mig!</h3>
-					<p>Adressvägen 1</p>
-					<p>987 65 Stad</p>
-				</div>
-				<div class="footer-row" id="footer-nav">
-					<h3>Navigera</h3>
-					<ul class="footer-links">
-						<li><a href="./index.html">Hem</a></li>
-						<li><a href="./services.html">Tjänster</a></li>
-						<li><a href="./inspiration.html">Inspiration</a></li>
-						<li><a href="./about.html">Om mig</a></li>
-						<li><a href="./contact.html">Kontakta mig</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="services__card">
+                <img src="./images/icon__fireplace.svg" alt="Icon of a house" class="services__card-icon">
+                <h2 class="services__card-title">Uteplats</h2>
+                <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+            <div class="services__card">
+                <img src="./images/icon__garage.svg" alt="Icon of a house" class="services__card-icon">
+                <h2 class="services__card-title">Garage</h2>
+                <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__menu-list-wrapper">
+                <div class="footer__logo-wrapper">
+                    <a href="./index.html" class="footer__logo-link">
+                       <img src="./images/logo__full--black.svg" alt="SnickarÖhmans logga" class="footer__logo-image">
+                    </a>
+                </div>
+                <div class="footer__socials-wrapper">
+                    <a href="#" class="footer__social-link">
+                        <img src="./images/icon__fb-clean.svg" alt="Facebook icon" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="./images/icon__insta-clean.svg" alt="Instagram icon" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="./images/icon__linkedin.svg" alt="LinkedIn icon" class="footer__social-icon">
+                    </a>
+                </div>
+                <!-- <span class="footer__copyright-text">
+                    SnickarÖhman 2025 © Copyright Albin Everdin
+                </span> -->
+            </div>
+            
+
+            <div class="footer__menu-list-wrapper">
+                <span class="footer__menu-title">Navigera</span>
+                <ul class="footer__menu-list">
+                    <li><a href="./index.html" class="footer__menu-item">Hem</a></li>
+                    <li><a href="./services.html" class="footer__menu-item">Tjänster</a></li>
+                    <li><a href="./inspiration.html" class="footer__menu-item">Inspiration</a></li>
+                    <li><a href="./about.html" class="footer__menu-item">Om mig</a></li>
+                    <li><a href="./contact.html" class="footer__menu-item">Kontakta mig</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__menu-list-wrapper">
+                <span class="footer__menu-title">Kontakt</span>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <img src="./images/icon__mail.svg" alt="Icon of a mail envelope" class="footer__menu-icon">
+                        070 - 123 45 67
+                    </li>
+                    <li class="footer__menu-item">
+                        <img src="./images/icon__phone.svg" alt="Icon of a mail envelope" class="footer__menu-icon">
+                        <a href="#">Maila mig!</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <img src="./images/icon__location.svg" alt="Icon of a mail envelope" class="footer__menu-icon">
+                        Adressvägen 1, UÅ
+                    </li>
+            </div>
+
+        </div>
+
 </body>
+
+</html>
+
+
+
+
+
+<!-- <div class="footer__logo">
+                <a href="./index.html">
+                    <img src="./images/snickarohman-white.png" alt="SnickarÖhmans logga">
+                </a>
+            </div>
+
+            <ul class="footer__menu">
+                <li><a href="./index.html">Hem</a></li>
+                <li><a href="./services.html">Tjänster</a></li>
+                <li><a href="./inspiration.html">Inspiration</a></li>
+                <li><a href="./about.html">Om mig</a></li>
+                <li><a href="./contact.html">Kontakta mig</a></li>
+            </ul> -->
