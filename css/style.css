@@ -16,6 +16,11 @@
         scroll-behavior: smooth;
 }
 
+/*===== DEBUGGER =====*/
+/* * {
+    border: 1px dashed red;
+} */
+
 body {
     background-color: var(--bg);
     color: var(--text-dark50);
