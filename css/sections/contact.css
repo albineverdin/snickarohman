@@ -3,4 +3,24 @@
     text-align: center;
 }
 
+#cs__contact h1 {
+    color: var(--text-light900);
+}
 
+
+
+
+
+
+
+/* .input-box input, textarea {
+		width: 100%;
+		height: 50px;
+		margin: 12px 0;
+		padding-left: 12px;
+		background: #FEE3C8;
+		border: none;
+		border-radius: 6px;
+		color: black;
+		font-family:"Poppins", sans-serif;
+} */
