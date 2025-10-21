@@ -8,8 +8,64 @@
 }
 
 
+.contact__input-wrapper {
+    text-align: left;
+    color: var(--text-light900);
+    font-family: var(--Montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: auto;
+    gap: 1rem;
+}
 
+input, textarea {
+    width: 100%;
+    background: transparent;
+    outline: 1px solid var(--text-dark100);
+    border: none;
+    border-radius: 2px;
+    color: var(--text-light950);
+    font-family: var(--Inter);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px;
+}
 
+input:focus, textarea:focus {
+    outline: 1px solid var(--primary100);
+    background: var(--text-dark100)
+}
+
+::placeholder {
+    color: var(--text-light950);
+    opacity: 0.1;
+}
+
+.contact__button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--text-dark100);
+    color: var(--text-light950);
+    font-size: 1rem;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 300ms;
+    margin-top: 1rem;
+}
+
+.contact__button:hover {
+    background-color: var(--primary50);
+    color: var(--text-dark50);
+}
 
 
 
