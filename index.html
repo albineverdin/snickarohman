@@ -29,10 +29,11 @@
             
             <ul class="header__menu">
 					<li class="header__menu--active"><a href="#">Hem</a></li>
+                    <li><a href="./about.html">Om mig</a></li>
 					<li><a href="./services.html">Tjänster</a></li>
 					<li><a href="./inspiration.html">Inspiration</a></li>
-					<li><a href="./about.html">Om mig</a></li>
-					<li class="contact-button"><a href="./contact.html">Kontakta mig</a></li>
+					<li class="contact-button"><a href="./contact.html">Kontakt</a></li>
+                    <li class="header__button"><a href="#cs__contact">Offertförfrågan</a></li>
 			</ul>
         </nav>
     </header>
@@ -71,7 +72,7 @@
                 </p>
 
                 <div class="cs__button">
-                    <a href="#">Mer om mig!</a>
+                    <a href="#">Mer om mig</a>
                 </div>
             </div>
         </div>
@@ -103,8 +104,8 @@
 
 
     <section class="content-section" id="cs__services">
-        <span class="cs__title-topper">Vad jag kan göra</span>
-        <h1 class="cs__title">Några av mina tjänster</h1>
+        <span class="cs__title-topper">Tjänster</span>
+        <h1 class="cs__title">Renovering & snickeri</h1>
 
         <div class="services__card-wrapper">
             <div class="services__card">
@@ -125,25 +126,51 @@
                 <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
             </div>
         </div>
+        <div class="cs__button">
+            <a href="./services.html">Se alla tjänster</a>
+        </div>
     </section>
 
     <section class="content-section" id="cs__inspiration">
-        <span class="cs__title-topper">Inspiration</span>
-        <h1 class="cs__title">Kolla in några av mina projekt</h1>
+        <div class="cs__container">
+            <div class="cs__content">
+                <span class="cs__title-topper">Inspiration</span>
+                <h1 class="cs__title">Lite saker jag kan göra</h1>
 
-        <div class="inspiration__image-grid">
-            <div class="inspiration__image-item">
-                <img src="./images/img-2.jpg" alt="Inspiration image 1" class="inspiration__image">
+                <p class="cs__bread-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
+                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
+                    totam nemo excepturi voluptatibus praesentium cupiditate 
+                    nesciunt?
+                </p>
+                <div class="cs__button">
+                    <a href="./inspiration.html">Mer inspiration</a>
+                </div>
             </div>
-            <div class="inspiration__image-item">
-                <img src="./images/img-3.jpg" alt="Inspiration image 2" class="inspiration__image">
+            <div class="cs__image">
+                <img src="./images/img-2.jpg" alt="Inspiration image 1">
             </div>
-            <div class="inspiration__image-item">
-                <img src="./images/img-4.jpg" alt="Inspiration image 3" class="inspiration__image">
-            </div>
-            <div class="inspiration__image-item">
-                <img src="./images/img-5.jpg" alt="Inspiration image 4" class="inspiration__image">
-            </div>
+            
+
+
+
+            <!-- <div class="inspiration__image-grid">
+                <div class="inspiration__image-item">
+                    <img src="./images/img-2.jpg" alt="Inspiration image 1" class="inspiration__image">
+                </div>
+                <div class="inspiration__image-item">
+                    <img src="./images/img-3.jpg" alt="Inspiration image 2" class="inspiration__image">
+                </div>
+                <div class="inspiration__image-item">
+                    <img src="./images/img-4.jpg" alt="Inspiration image 3" class="inspiration__image">
+                </div>
+                <div class="inspiration__image-item">
+                    <img src="./images/img-5.jpg" alt="Inspiration image 4" class="inspiration__image">
+                </div>
+            </div> -->
+
+
         </div>
     </section>
 
@@ -154,20 +181,20 @@
         <span class="cs__title-topper">Förverkliga din dröm</span>
         <h1 class="cs__title">Få en kostnadsfri <br>offert idag!</h1>
 
-        <form method="POST" action="" class="contact__form">
+        <form method="POST" action="mailto:alev0009@student.umu.se" class="contact__form">
             <div class="contact__input-wrapper">
                 
-                <label for="name" class="contact__label">Namn</label>
-                <input type="text" id="name" name="name" class="contact__input" placeholder="Vem är du?" required>
+                <label for="name" class="contact__label">Namn *</label>
+                <input type="text" id="name" name="namn" class="contact__input" placeholder="Vem är du?" required>
 
-                <label for="email" class="contact__label">Epost</label>
-                <input type="email" id="email" name="email" class="contact__input" placeholder="Hur kontaktar jag dig?" required>
+                <label for="email" class="contact__label">Epost *</label>
+                <input type="email" id="email" name="mail" class="contact__input" placeholder="Hur kontaktar jag dig?" required>
 
                 <label for="phone" class="contact__label">Telefonnummer</label>
-                <input type="tel" id="phone" class="contact__input" placeholder="Vill du hellre prata?">
+                <input type="tel" id="phone" name="tel" class="contact__input" placeholder="Vill du hellre prata?">
 
-                <label for="message" class="contact__label">Meddelande</label>
-                <textarea id="message" class="contact__textarea" placeholder="Vad behöver du hjälp med?" required></textarea>
+                <label for="message" class="contact__label">Meddelande *</label>
+                <textarea id="message" name="meddelande" class="contact__textarea" placeholder="Vad behöver du hjälp med?" required></textarea>
 
                 <button type="submit" class="contact__button">Skicka</button>
 
