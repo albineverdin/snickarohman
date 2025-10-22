@@ -58,8 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .cs__title-topper {
         font-family: var(--Inter);
-        font-size: 0.8rem;
-        font-weight: 600;
+        font-size: 0.9rem;
+        font-weight: 700;
         margin-bottom: 1rem;
         text-transform: uppercase;
         letter-spacing: .5em;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     .cs__title {
         font-size: 3.6rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
         text-transform: uppercase;
         letter-spacing: .05em;
         line-height: 1;
@@ -110,11 +110,13 @@ h1, h2, h3, h4, h5, h6 {
         cursor: pointer;
         text-decoration: none;
         transition-duration: 300ms;
+        transform: scale(1);
     }
 
     .cs__button:hover {
         background-color: var(--primary50);
         color: var(--text-light900);
+        transform: scale(1.05);
     }
 
 
