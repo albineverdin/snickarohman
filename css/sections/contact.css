@@ -1,9 +1,9 @@
-#cs__contact {
+.cs__contact {
     background-color: var(--text-dark50);
     text-align: center;
 }
 
-#cs__contact h1 {
+.cs__contact h1 {
     color: var(--text-light900);
 }
 
