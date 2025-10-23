@@ -74,6 +74,15 @@ h1, h2, h3, h4, h5, h6 {
         text-transform: uppercase;
         letter-spacing: .05em;
         line-height: 1;
+        /* text-align: left; */
+    }
+
+    .cs__subtitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        /* margin-bottom: -1.6rem; */
+        text-transform: uppercase;
+        color: var(--text-dark100);
     }
 
     .cs__bread-text {
