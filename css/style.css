@@ -39,11 +39,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-dark100);
 }
 
+main {
+    padding: 0 0 5rem;
+}
 
 /*===== GE MIG ETT HEM =====*/
     .content-section {
         /* position: relative; */
-        padding: 10rem;
+        padding: 5rem 10rem;
     }
 
     .cs__container {
@@ -53,8 +56,21 @@ h1, h2, h3, h4, h5, h6 {
         gap: 5rem;
     }
 
-    .cs__content {
+    .cs__content-center {
+        margin: auto;
+        width: fit-content;
+        max-width: 60rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cs__content-side {
         padding: 30px 0;
+        margin: auto;
+        max-width: 60rem;
+        text-align: left;
+
     }
 
     .cs__title-topper {
@@ -109,6 +125,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .cs__button {
         display: inline-block;
+        align-items: center;
+        width: fit-content;
         padding: 1rem 2rem;
         background-color: var(--text-dark100);
         color: var(--text-light950);
@@ -151,11 +169,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /*===== cs__services STARTSIDA services kanske? =====*/
 
-    #cs__services {
+    /* #cs__services {
         text-align: center;
         padding: 10rem;
         line-height: 2.2;
-    }
+    } */
 
     .services__card-wrapper {
         display: flex;
