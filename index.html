@@ -10,8 +10,17 @@
 	<meta name="keywords" content="XXX">
 	<meta name="author" content="Albin Everdin">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="./images/logo__icon--black.svg" type="image/svg+xml">
+	
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SnickarÖhman" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
@@ -47,137 +56,128 @@
         </div>
     </div>
     
+    <main>
+        <section class="content-section">
+                <div class="cs__container">
+                    <div class="cs__image">
+                        <img src="./images/img-1.jpg" alt="Test image">
+                    </div>
+                    <div class="cs__content-side">
+                        <span class="cs__title-topper">Välkommen till</span>
+                        <h1 class="cs__title">Snickaröhman</h1>
+                        <!-- <h1 class="cs__title">Ditt lokala proffs</h1> -->
 
-    <section class="content-section">
-        <div class="cs__container">
-            <div class="cs__image">
-                <img src="./images/img-1.jpg" alt="Test image">
-            </div>
-            <div class="cs__content">
-                <span class="cs__title-topper">Välkommen till</span>
-                <h1 class="cs__title">Snickaröhman</h1>
-                <!-- <h1 class="cs__title">Ditt lokala proffs</h1> -->
+                        <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero quae incidunt nemo dolores magnam asperiores aut 
+                            veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
+                            totam nemo excepturi voluptatibus praesentium cupiditate 
+                            nesciunt?
+                        </p>
+                        <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero quae incidunt nemo dolores magnam asperiores aut 
+                            veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
+                            totam nemo excepturi voluptatibus praesentium cupiditate 
+                            nesciunt?
+                        </p>
 
-                <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
-                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
-                    totam nemo excepturi voluptatibus praesentium cupiditate 
-                    nesciunt?
-                </p>
-                <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
-                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
-                    totam nemo excepturi voluptatibus praesentium cupiditate 
-                    nesciunt?
-                </p>
+                        <div class="cs__button">
+                            <a href="#">Mer om mig</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+
+
+            <section class="content-section" id="cs__index-merits">
+                <div class="cs__container>">
+                    <ul class="merits__card-container">
+                        <li class="merits__card">
+                            <img src="images/icon__saw.svg" alt="Icon of a saw" class="merits__card-icon">
+                            <h2 class="merits__card--number">10+</h2>
+                            <p class="merits__card--text">Års erfarenhet</p>
+                        </li>
+                        <li class="merits__card">
+                            <img src="images/icon__handshake.svg" alt="Icon of a medal" class="merits__card-icon">
+                            <h2 class="merits__card--number">500+</h2>
+                            <p class="merits__card--text">Nöjda kunder</p>
+                        </li>
+                        <li class="merits__card">
+                            <img src="images/icon__medal.svg" alt="Icon of shaking hands" class="merits__card-icon">
+                            <h2 class="merits__card--number">1000+</h2>
+                            <p class="merits__card--text">Slutförda projekt</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+            <section class="content-section" id="cs__services">
+                
+                <div class="cs__content-center">
+                    <span class="cs__title-topper">Tjänster</span>
+                    <h1 class="cs__title">Renovering & snickeri</h1>
+                </div>
+                
+
+                <div class="services__card-wrapper">
+                    <div class="services__card">
+                        <img src="./images/icon__sauna.svg" alt="Icon of a house" class="services__card-icon">
+                        <h2 class="services__card-title">Bastu</h2>
+                        <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
+
+                    <div class="services__card">
+                        <img src="./images/icon__fireplace.svg" alt="Icon of a house" class="services__card-icon">
+                        <h2 class="services__card-title">Uteplats</h2>
+                        <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
+
+                    <div class="services__card">
+                        <img src="./images/icon__garage.svg" alt="Icon of a house" class="services__card-icon">
+                        <h2 class="services__card-title">Garage</h2>
+                        <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
+                </div>
                 <div class="cs__button">
-                    <a href="#">Mer om mig</a>
+                    <a href="./services.html">Se alla tjänster</a>
                 </div>
+            </section>
+
+            <section class="content-section" id="cs__inspiration">
+                <div class="cs__container">
+                    <div class="cs__content-side">
+                        <span class="cs__title-topper">Inspiration</span>
+                        <h1 class="cs__title">Lite saker jag kan göra</h1>
+
+                        <p class="cs__bread-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero quae incidunt nemo dolores magnam asperiores aut 
+                            veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
+                            totam nemo excepturi voluptatibus praesentium cupiditate 
+                            nesciunt?
+                        </p>
+                        <div class="cs__button">
+                            <a href="./inspiration.html">Mer inspiration</a>
+                        </div>
+                    </div>
+                    <div class="cs__image">
+                        <img src="./images/img-2.jpg" alt="Inspiration image 1">
+                    </div>
+                    
+
+
             </div>
-        </div>
-    </section>
-
-
-
-    <section class="content-section" id="cs__merits">
-        <div class="cs__container>">
-            <ul class="merits__card-container">
-                <li class="merits__card">
-                    <img src="images/icon__saw.svg" alt="Icon of a saw" class="merits__card-icon">
-                    <h2 class="merits__card--number">10+</h2>
-                    <p class="merits__card--text">Års erfarenhet</p>
-                </li>
-                <li class="merits__card">
-                    <img src="images/icon__handshake.svg" alt="Icon of a medal" class="merits__card-icon">
-                    <h2 class="merits__card--number">500+</h2>
-                    <p class="merits__card--text">Nöjda kunder</p>
-                </li>
-                <li class="merits__card">
-                    <img src="images/icon__medal.svg" alt="Icon of shaking hands" class="merits__card-icon">
-                    <h2 class="merits__card--number">1000+</h2>
-                    <p class="merits__card--text">Slutförda projekt</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-
-    <section class="content-section" id="cs__services">
-        <span class="cs__title-topper">Tjänster</span>
-        <h1 class="cs__title">Renovering & snickeri</h1>
-
-        <div class="services__card-wrapper">
-            <div class="services__card">
-                <img src="./images/icon__sauna.svg" alt="Icon of a house" class="services__card-icon">
-                <h2 class="services__card-title">Bastu</h2>
-                <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            </div>
-
-            <div class="services__card">
-                <img src="./images/icon__fireplace.svg" alt="Icon of a house" class="services__card-icon">
-                <h2 class="services__card-title">Uteplats</h2>
-                <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            </div>
-
-            <div class="services__card">
-                <img src="./images/icon__garage.svg" alt="Icon of a house" class="services__card-icon">
-                <h2 class="services__card-title">Garage</h2>
-                <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            </div>
-        </div>
-        <div class="cs__button">
-            <a href="./services.html">Se alla tjänster</a>
-        </div>
-    </section>
-
-    <section class="content-section" id="cs__inspiration">
-        <div class="cs__container">
-            <div class="cs__content">
-                <span class="cs__title-topper">Inspiration</span>
-                <h1 class="cs__title">Lite saker jag kan göra</h1>
-
-                <p class="cs__bread-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
-                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
-                    totam nemo excepturi voluptatibus praesentium cupiditate 
-                    nesciunt?
-                </p>
-                <div class="cs__button">
-                    <a href="./inspiration.html">Mer inspiration</a>
-                </div>
-            </div>
-            <div class="cs__image">
-                <img src="./images/img-2.jpg" alt="Inspiration image 1">
-            </div>
-            
-
-
-
-            <!-- <div class="inspiration__image-grid">
-                <div class="inspiration__image-item">
-                    <img src="./images/img-2.jpg" alt="Inspiration image 1" class="inspiration__image">
-                </div>
-                <div class="inspiration__image-item">
-                    <img src="./images/img-3.jpg" alt="Inspiration image 2" class="inspiration__image">
-                </div>
-                <div class="inspiration__image-item">
-                    <img src="./images/img-4.jpg" alt="Inspiration image 3" class="inspiration__image">
-                </div>
-                <div class="inspiration__image-item">
-                    <img src="./images/img-5.jpg" alt="Inspiration image 4" class="inspiration__image">
-                </div>
-            </div> -->
-
-
-        </div>
-    </section>
+        </section>
+    </main>
+    
 
 
 
 
-    <section class="content-section" id="cs__contact">
+    <section class="content-section cs__contact" id="cs__contact">
         <span class="cs__title-topper">Förverkliga din dröm</span>
         <h1 class="cs__title">Få en kostnadsfri <br>offert idag!</h1>
 
