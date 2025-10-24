@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="sv">
@@ -13,10 +12,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="./images/logo__icon--black.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
 </head>
 
 
@@ -30,86 +28,52 @@
             </div>
             
             <ul class="header__menu">
-					<li class="header__menu--active"><a href="#">Hem</a></li>
+					<li><a href="./index.html">Hem</a></li>
                     <li><a href="./about.html">Om mig</a></li>
 					<li><a href="./services.html">Tjänster</a></li>
-					<li><a href="./inspiration.html">Inspiration</a></li>
-					<li class="contact-button"><a href="./contact.html">Kontakt</a></li>
+					<li class="header__menu--active"><a href="./inspiration.html">Inspiration</a></li>
+					<li><a href="./contact.html">Kontakt</a></li>
                     <li class="header__button"><a href="#cs__contact">Offertförfrågan</a></li>
 			</ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero__video-container">
-            <div class="hero__video-container--overlay"></div>
-            <video autoplay muted loop class="hero__video">
-                <source src="./videos/hero__background-video.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-    
-
-    <section class="content-section">
-        <div class="cs__container">
-            <div class="cs__image">
-                <img src="./images/img-1.jpg" alt="Test image">
-            </div>
-            <div class="cs__content">
-                <span class="cs__title-topper">Välkommen till</span>
-                <h1 class="cs__title">Snickaröhman</h1>
-                <!-- <h1 class="cs__title">Ditt lokala proffs</h1> -->
-
-                <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
-                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
-                    totam nemo excepturi voluptatibus praesentium cupiditate 
-                    nesciunt?
-                </p>
-                <p class="cs__bread-text"> Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
-                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
-                    totam nemo excepturi voluptatibus praesentium cupiditate 
-                    nesciunt?
-                </p>
-
-                <div class="cs__button">
-                    <a href="#">Mer om mig</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
-    <section class="content-section" id="cs__merits">
-        <div class="cs__container>">
-            <ul class="merits__card-container">
-                <li class="merits__card">
-                    <img src="images/icon__saw.svg" alt="Icon of a saw" class="merits__card-icon">
-                    <h2 class="merits__card--number">10+</h2>
-                    <p class="merits__card--text">Års erfarenhet</p>
-                </li>
-                <li class="merits__card">
-                    <img src="images/icon__handshake.svg" alt="Icon of a medal" class="merits__card-icon">
-                    <h2 class="merits__card--number">500+</h2>
-                    <p class="merits__card--text">Nöjda kunder</p>
-                </li>
-                <li class="merits__card">
-                    <img src="images/icon__medal.svg" alt="Icon of shaking hands" class="merits__card-icon">
-                    <h2 class="merits__card--number">1000+</h2>
-                    <p class="merits__card--text">Slutförda projekt</p>
-                </li>
-            </ul>
-        </div>
-    </section>
 
 
-    <section class="content-section" id="cs__services">
-        <span class="cs__title-topper">Tjänster</span>
-        <h1 class="cs__title">Renovering & snickeri</h1>
+	<div class="banner" id="banner__services">
 
-        <div class="services__card-wrapper">
+		<div class="banner__image-wrapper">
+			<div class="banner__image--overlay"></div>
+			<img class="banner__image" src="./images/img__services-banner.jpg" alt="Banner image showing a wooden house under construction" class="banner__image">
+		</div>
+
+		<div class="banner__content">
+			<span class="banner__title-topper">Föränderligt och fantastiskt</span>
+			<h1 class="banner__title">Trä är magiskt</h1>
+		</div>
+	</div>
+
+
+
+
+	<main>
+	<section class="content-section" id="cs__services">
+
+
+		<div class="cs__content-center">
+			<span class="cs__title-topper">Inspiration</span>
+      	  	<h1 class="cs__title">Galleri</h1>
+			<p class="cs__bread-text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum magnam beatae, adipisci nam aperiam rerum ab sit laudantium, labore, obcaecati cum nihil omnis quasi amet aliquam voluptas quibusdam. Dolores!
+			</p>
+		</div>
+        
+
+
+        <!-- <div class="services__card-wrapper">
             <div class="services__card">
                 <img src="./images/icon__sauna.svg" alt="Icon of a house" class="services__card-icon">
                 <h2 class="services__card-title">Bastu</h2>
@@ -126,60 +90,22 @@
                 <img src="./images/icon__garage.svg" alt="Icon of a house" class="services__card-icon">
                 <h2 class="services__card-title">Garage</h2>
                 <p class="services__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            </div>
-        </div>
-        <div class="cs__button">
-            <a href="./services.html">Se alla tjänster</a>
-        </div>
-    </section>
-
-    <section class="content-section" id="cs__inspiration">
-        <div class="cs__container">
-            <div class="cs__content">
-                <span class="cs__title-topper">Inspiration</span>
-                <h1 class="cs__title">Lite saker jag kan göra</h1>
-
-                <p class="cs__bread-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Libero quae incidunt nemo dolores magnam asperiores aut 
-                    veniam? Temporibus, nulla quos recusandae explicabo, blanditiis
-                    totam nemo excepturi voluptatibus praesentium cupiditate 
-                    nesciunt?
-                </p>
-                <div class="cs__button">
-                    <a href="./inspiration.html">Mer inspiration</a>
-                </div>
-            </div>
-            <div class="cs__image">
-                <img src="./images/img-2.jpg" alt="Inspiration image 1">
-            </div>
-            
-
-
-
-            <!-- <div class="inspiration__image-grid">
-                <div class="inspiration__image-item">
-                    <img src="./images/img-2.jpg" alt="Inspiration image 1" class="inspiration__image">
-                </div>
-                <div class="inspiration__image-item">
-                    <img src="./images/img-3.jpg" alt="Inspiration image 2" class="inspiration__image">
-                </div>
-                <div class="inspiration__image-item">
-                    <img src="./images/img-4.jpg" alt="Inspiration image 3" class="inspiration__image">
-                </div>
-                <div class="inspiration__image-item">
-                    <img src="./images/img-5.jpg" alt="Inspiration image 4" class="inspiration__image">
-                </div>
             </div> -->
 
 
+
+
         </div>
     </section>
+	</main>
 
 
 
 
-    <section class="content-section" id="cs__contact">
+
+
+
+    <section class="content-section cs__contact" id="cs__contact">
         <span class="cs__title-topper">Förverkliga din dröm</span>
         <h1 class="cs__title">Få en kostnadsfri <br>offert idag!</h1>
 
@@ -203,41 +129,6 @@
             </div>
         </form>
     </section>
-
-
-
-
-    <!-- <div class="contact-form">
-
-				<form action="mailto:everdin.albin@gmail.com" method="post" enctype="text/plain">
-					<div class="form-container">
-						<div class="input-box" id="input-name">
-							<label for="name">Namn:</label>
-							<input type="text" id="name" name="namn" placeholder="För- och efternamn">
-						</div>	
-		
-						<div class="input-box" id="input-phone">
-							<label for="phone">Telefonnummer:</label>
-							<input type="tel" id="phone" name="phone" placeholder="Telefonnummer">
-						</div>
-		
-						<div class="input-box" id="input-email">
-							<label for="email">Epost:</label>
-							<input type="email" id="email" name="email" placeholder="Epostadress">
-						</div>
-		
-						<div class="input-box" id="input-message">
-							<label for="message">Meddelande:</label>
-							<textarea id="message" name="message" placeholder="Skriv här..."></textarea>
-						</div>	
-		
-						<div class="button" id="input-submit">
-							<button type="submit">Skicka</button>
-						</div>
-					</div>
-				</form>
-			</div> -->
-
 
 
 
@@ -296,37 +187,10 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </footer>
+	
+
 </body>
 
 </html>
-
-
-
-
-
-<!-- <div class="footer__logo">
-                <a href="./index.html">
-                    <img src="./images/snickarohman-white.png" alt="SnickarÖhmans logga">
-                </a>
-            </div>
-
-            <ul class="footer__menu">
-                <li><a href="./index.html">Hem</a></li>
-                <li><a href="./services.html">Tjänster</a></li>
-                <li><a href="./inspiration.html">Inspiration</a></li>
-                <li><a href="./about.html">Om mig</a></li>
-                <li><a href="./contact.html">Kontakta mig</a></li>
-            </ul> -->
-
-
-
-
-
-<!-- Spinning carousel with list items of specific services from website-->
-
-
-<!-- Gallery with CSS grid -->
- <!-- Add filter with JavaScript?-->
