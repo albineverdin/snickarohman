@@ -3,18 +3,19 @@
 <html lang="sv">
 
 <!-- Metadata -->
+
 <head>
     <title>SnickarÖhmans hemsida</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="SnickarÖhmans företagssida">
-	<meta name="keywords" content="XXX">
-	<meta name="author" content="Albin Everdin">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="./images/logo__icon--black.svg" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="description" content="SnickarÖhmans företagssida">
+    <meta name="keywords" content="XXX">
+    <meta name="author" content="Albin Everdin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo__icon--black.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 
@@ -26,54 +27,102 @@
                     <img src="./images/snickarohman-white.png" alt="SnickarÖhmans logga">
                 </a>
             </div>
-            
+
             <ul class="header__menu">
-					<li><a href="./index.html">Hem</a></li>
-                    <li><a href="./about.html">Om mig</a></li>
-					<li><a href="./services.html">Tjänster</a></li>
-					<li class="header__menu--active"><a href="./inspiration.html">Inspiration</a></li>
-					<li><a href="./contact.html">Kontakt</a></li>
-                    <li class="header__button"><a href="#cs__contact">Offertförfrågan</a></li>
-			</ul>
+                <li><a href="./index.html">Hem</a></li>
+                <li><a href="./about.html">Om mig</a></li>
+                <li><a href="./services.html">Tjänster</a></li>
+                <li class="header__menu--active"><a href="./inspiration.html">Inspiration</a></li>
+                <li><a href="./contact.html">Kontakt</a></li>
+                <li class="header__button"><a href="#cs__contact">Offertförfrågan</a></li>
+            </ul>
         </nav>
     </header>
 
 
 
+    <div class="banner" id="banner__services">
 
+        <div class="banner__image-wrapper">
+            <div class="banner__image--overlay"></div>
+            <img class="banner__image" src="./images/img__services-banner.jpg"
+                alt="Banner image showing a wooden house under construction" class="banner__image">
+        </div>
 
-
-	<div class="banner" id="banner__services">
-
-		<div class="banner__image-wrapper">
-			<div class="banner__image--overlay"></div>
-			<img class="banner__image" src="./images/img__services-banner.jpg" alt="Banner image showing a wooden house under construction" class="banner__image">
-		</div>
-
-		<div class="banner__content">
-			<span class="banner__title-topper">Föränderligt och fantastiskt</span>
-			<h1 class="banner__title">Trä är magiskt</h1>
-		</div>
-	</div>
+        <div class="banner__content">
+            <span class="banner__title-topper">Föränderligt och fantastiskt</span>
+            <h1 class="banner__title">Trä är magiskt</h1>
+        </div>
+    </div>
 
 
 
 
-	<main>
-	<section class="content-section" id="cs__services">
+    <main>
+        <section class="content-section">
 
 
-		<div class="cs__content-center">
-			<span class="cs__title-topper">Inspiration</span>
-      	  	<h1 class="cs__title">Galleri</h1>
-			<p class="cs__bread-text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum magnam beatae, adipisci nam aperiam rerum ab sit laudantium, labore, obcaecati cum nihil omnis quasi amet aliquam voluptas quibusdam. Dolores!
-			</p>
-		</div>
-        
+            <div class="cs__content-center">
+                <span class="cs__title-topper">Inspiration</span>
+                <h1 class="cs__title">Galleri</h1>
+                <p class="cs__bread-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum magnam beatae, adipisci nam
+                    aperiam rerum ab sit laudantium, labore, obcaecati cum nihil omnis quasi amet aliquam voluptas
+                    quibusdam. Dolores!
+                </p>
+            </div>
+
+            <div class="gallery__wrapper">
+                <div class="gallery__column">
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery1.webp" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery2.webp" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery3.webp" alt="">
+                    </div>
+                </div>
+                <div class="gallery__column">
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery4.webp" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery5.jpg" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery6.webp" alt="">
+                    </div>
+                </div>
+                <div class="gallery__column">
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery7.webp" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery8.jpg" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="./images/gallery/img__gallery9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__overlay" id="galleryOverlay">
+                <div class="gallery__overlay-content">
+                    <button class="gallery__button-close" id="closeButton">&times;</button>
+                    <img id="overlayImg" src="" alt="">
+                </div>
+            </div>
 
 
-        <!-- <div class="services__card-wrapper">
+
+
+
+
+
+
+
+            <!-- <div class="services__card-wrapper">
             <div class="services__card">
                 <img src="./images/icon__sauna.svg" alt="Icon of a house" class="services__card-icon">
                 <h2 class="services__card-title">Bastu</h2>
@@ -94,10 +143,8 @@
 
 
 
-
-        </div>
-    </section>
-	</main>
+        </section>
+    </main>
 
 
 
@@ -111,18 +158,20 @@
 
         <form method="POST" action="mailto:alev0009@student.umu.se" class="contact__form">
             <div class="contact__input-wrapper">
-                
+
                 <label for="name" class="contact__label">Namn *</label>
                 <input type="text" id="name" name="namn" class="contact__input" placeholder="Vem är du?" required>
 
                 <label for="email" class="contact__label">Epost *</label>
-                <input type="email" id="email" name="mail" class="contact__input" placeholder="Hur kontaktar jag dig?" required>
+                <input type="email" id="email" name="mail" class="contact__input" placeholder="Hur kontaktar jag dig?"
+                    required>
 
                 <label for="phone" class="contact__label">Telefonnummer</label>
                 <input type="tel" id="phone" name="tel" class="contact__input" placeholder="Vill du hellre prata?">
 
                 <label for="message" class="contact__label">Meddelande *</label>
-                <textarea id="message" name="meddelande" class="contact__textarea" placeholder="Vad behöver du hjälp med?" required></textarea>
+                <textarea id="message" name="meddelande" class="contact__textarea"
+                    placeholder="Vad behöver du hjälp med?" required></textarea>
 
                 <button type="submit" class="contact__button">Skicka</button>
 
@@ -139,7 +188,7 @@
             <div class="footer__menu-list-wrapper">
                 <div class="footer__logo-wrapper">
                     <a href="./index.html" class="footer__logo-link">
-                       <img src="./images/logo__full--black.svg" alt="SnickarÖhmans logga" class="footer__logo-image">
+                        <img src="./images/logo__full--black.svg" alt="SnickarÖhmans logga" class="footer__logo-image">
                     </a>
                 </div>
                 <div class="footer__socials-wrapper">
@@ -157,7 +206,7 @@
                     SnickarÖhman 2025 © Copyright Albin Everdin
                 </span> -->
             </div>
-            
+
 
             <div class="footer__menu-list-wrapper">
                 <span class="footer__menu-title">Navigera</span>
@@ -189,7 +238,9 @@
             </div>
         </div>
     </footer>
-	
+
+    <!-- SCRIPTS -->
+    <script src="./js/galleryLightbox.js"></script>
 
 </body>
 
