@@ -6,15 +6,16 @@
 @import url('./sections/footer.css');
 @import url('./sections/contact.css');
 @import url('./sections/services.css');
+@import url('./sections/gallery.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 * {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-        scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*===== DEBUGGER =====*/
@@ -34,7 +35,12 @@ p {
     color: var(--text-dark100);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--Montserrat);
     color: var(--text-dark100);
 }
@@ -45,145 +51,150 @@ main {
 }
 
 /*===== GE MIG ETT HEM =====*/
-    .content-section {
-        /* position: relative; */
-        padding: 5rem 10rem;
-    }
+.content-section {
+    /* position: relative; */
+    padding: 5rem 10rem;
+    width: 100%
+}
 
-    .cs__container {
-        display: flex;
-        /* flex-direction: column; */
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* gap: 5rem; */
-    }
+.cs__container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* gap: 5rem; */
+}
 
-    .--center-flex {
-        flex-direction: column;
-        align-items: center;
-    }
+.--center-flex {
+    flex-direction: column;
+    align-items: center;
+}
 
-    .--side-flex {
-        flex-direction: row;
-        gap: 5rem;
-    }
+.--side-flex {
+    flex-direction: row;
+    gap: 5rem;
+}
 
-    .--flex-column {
-        flex-direction: column;
-    }
+.--flex-column {
+    flex-direction: column;
+}
 
-    .cs__content-center {
-        margin: auto;
-        width: fit-content;
-        max-width: 60rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.cs__content-center {
+    margin: auto;
+    width: fit-content;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .cs__content-side {
-        padding: 30px 0;
-        margin: auto;
-        max-width: 60rem;
-        text-align: left;
-    }
+.cs__content-side {
+    padding: 30px 0;
+    margin: auto;
+    max-width: 60rem;
+    text-align: left;
+}
 
-    .--bg-light-off {
-        background-color: var(--bg-dark);
-    }
+.--bg-light-off {
+    background-color: var(--bg-dark);
+}
 
-    .cs__title-topper {
-        font-family: var(--Inter);
-        font-size: 0.9rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
-        letter-spacing: .5em;
-        color: var(--primary100);
-    }
+.cs__title-topper {
+    font-family: var(--Inter);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: var(--primary100);
+}
 
-    .cs__title {
-        font-size: 3.6rem;
-        font-weight: 700;
-        margin: 1rem 0;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        line-height: 1;
-        /* text-align: left; */
-    }
+.cs__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1;
+    /* text-align: left; */
+}
 
-    .cs__subtitle {
-        font-size: 1.5rem;
-        font-weight: 700;
-        /* margin-bottom: -1.6rem; */
-        text-transform: uppercase;
-        color: var(--text-dark100);
-    }
+.cs__subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* margin-bottom: -1.6rem; */
+    text-transform: uppercase;
+    color: var(--text-dark100);
+}
 
-    .cs__bread-text {
-        margin: 2rem 0;
-        font-family: var(--Inter);
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.6;
-        color: var(--text-dark100);
-        max-width: 60rem;
-    }
+.cs__bread-text {
+    margin: 2rem 0;
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-dark100);
+    max-width: 60rem;
+}
 
-    .cs__image {
-        width: 400px;
-        height: 500px;
-        aspect-ratio: auto 520 / 680;
-    }
+.cs__image {
+    width: 400px;
+    height: 500px;
+    aspect-ratio: auto 520 / 680;
+}
 
-    .cs__image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 2px;
-    }
+.cs__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
 
-    .cs__button {
-        display: inline-block;
-        align-items: center;
-        width: fit-content;
-        padding: 1rem 2rem;
-        background-color: var(--text-dark100);
-        color: var(--text-light950);
-        font-family: var(--Montserrat);
-        font-weight: 600;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        text-decoration: none;
-        transition-duration: 300ms;
-        transform: scale(1);
-    }
+.cs__button {
+    display: inline-block;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: var(--text-dark100);
+    color: var(--text-light950);
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 300ms;
+    transform: scale(1);
+}
 
-    .external-link {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
+.external-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 
-    }
+}
 
-    .cs__button:hover {
-        background-color: var(--primary50);
-        color: var(--text-light900);
-        transform: scale(1.05);
-    }
+.cs__button:hover {
+    background-color: var(--primary50);
+    color: var(--text-light900);
+    transform: scale(1.05);
+}
 
-    .cs__link-external {
-        font-family: var(--Inter);
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--primary100);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        /* text-decoration: underline; */
-    }
+.cs__link-external {
+    font-family: var(--Inter);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* text-decoration: underline; */
+}
 
+
+
+
+@media screen {}
