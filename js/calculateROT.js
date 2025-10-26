@@ -16,7 +16,7 @@ function calculateROT() {
   // Beräkna total kostnad
   const totalCost = laborCost + materialCost - rotDeduction;
 
-  // Visa resultat
+  // Tilldela värdena för resultat
   document.getElementById('laborDisplay').textContent = laborCost.toFixed(2);
   document.getElementById('materialDisplay').textContent = materialCost.toFixed(2);
   document.getElementById('rotDeduction').textContent = rotDeduction.toFixed(2);
