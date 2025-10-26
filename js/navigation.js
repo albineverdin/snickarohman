@@ -1,5 +1,6 @@
 function navigationSticky() {
     const nav = document.querySelector('.header__navbar');
+    const logo = document.querySelector('.header__logo img');
 
     // Create a sentinel element at the top of the page
     const sentinel = document.createElement('div');
@@ -16,9 +17,11 @@ function navigationSticky() {
             if (!entry.isIntersecting) {
                 nav.classList.add('scrolled');
                 console.log('Scrolled class added!');
+                logo.src = './images/logo/snickarohman--burgundy-light.png';
             } else {
                 nav.classList.remove('scrolled');
                 console.log('Scrolled class removed!');
+                logo.src = './images/logo/snickarohman--creme.png';
             }
         });
     }, {
