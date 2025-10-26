@@ -82,7 +82,7 @@
                     </p>
 
                     <div class="cs__button">
-                        <a href="#">Mer om mig</a>
+                        <a href="./about.html">Mer om mig</a>
                     </div>
                 </div>
             </div>
@@ -168,9 +168,25 @@
                         <a href="./inspiration.html">Mer inspiration</a>
                     </div>
                 </div>
-                <div class="cs__image">
-                    <img src="./images/img-2.jpg" alt="Inspiration image 1">
+
+                <div class="slideshow__container">
+
+                    <button class="slideshow__btn-prev" onclick="previousSlide()">&#10094</button>
+
+                    <div class="slideshow__slide">
+                        <img src="./images/slideshow/slideshow__img1.jpg" alt="">
+                    </div>
+                    <div class="slideshow__slide">
+                        <img src="./images/slideshow/slideshow__img2.jpg" alt="">
+                    </div>
+                    <div class="slideshow__slide">
+                        <img src="./images/slideshow/slideshow__img3.jpg" alt="">
+                    </div>
+
+                    <button class="slideshow__btn-next" onclick="nextSlide()">&#10095</button>
                 </div>
+
+
 
 
 
@@ -306,6 +322,7 @@
     </footer>
 
     <script src="./js/navigation.js"></script>
+    <script src="./js/slideshow.js"></script>
 </body>
 
 </html>
