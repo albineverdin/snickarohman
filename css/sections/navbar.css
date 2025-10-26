@@ -18,13 +18,17 @@
     transition: all 0.3s ease;
 }
 
+.header__navbar a {
+    transition: color 0.3s ease;
+}
+
 .header__navbar.scrolled {
     background-color: var(--bg);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.header__navbar.scrolled a {
-    color: var(--text-dark50);
+.header__navbar.scrolled .header__menu-item a {
+    color: var(--text-dark100);
 }
 
 .header__logo img {
