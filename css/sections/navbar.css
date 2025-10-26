@@ -76,7 +76,7 @@
 }
 
 .header__menu-item a.--active {
-    color: var(--primary50);
+    color: var(--primary50) !important;
     text-decoration: underline 2px;
     text-underline-offset: 10px;
     font-weight: bold;

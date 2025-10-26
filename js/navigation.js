@@ -1,10 +1,11 @@
 function navigationSticky() {
+    //Get all navbar items and logo img
     const nav = document.querySelector('.header__navbar');
     const logo = document.querySelector('.header__logo img');
 
     // Create a sentinel element at the top of the page
     const sentinel = document.createElement('div');
-    sentinel.style.height = '100vh'; // Adjust this - how far to scroll before changing
+    sentinel.style.height = '100vh'; // Scroll length
     sentinel.style.position = 'absolute';
     sentinel.style.top = '0';
     sentinel.style.width = '100%';
@@ -16,11 +17,12 @@ function navigationSticky() {
             // If scrolled past the sentinel (not visible)
             if (!entry.isIntersecting) {
                 nav.classList.add('scrolled');
-                console.log('Scrolled class added!');
+                console.log('Added scroll class');
                 logo.src = './images/logo/snickarohman--burgundy-light.png';
             } else {
+                // Reset - remove scrolled class and revert to old logo src
                 nav.classList.remove('scrolled');
-                console.log('Scrolled class removed!');
+                console.log('Removed scroll class');
                 logo.src = './images/logo/snickarohman--creme.png';
             }
         });
@@ -32,23 +34,25 @@ function navigationSticky() {
 }
 
 function setActivePage() {
-    //Get the name of the current page filename (e.g. index, about)
+    /* Get the name of the current page filename (e.g. index, about)
+    * Split divides the string at the '/' character, pop() removes the last element
+    */
     const currentPage = window.location.pathname.split('/').pop();
-    //Debug
     console.log('Current page:', currentPage);
 
-    //Get all menu links (navbar destinations)
+    // Get all menu links (navbar destinations)
     const menuLinks = document.querySelectorAll('.header__menu li a');
-    console.log('menu list:', menuLinks);
 
     menuLinks.forEach(function (link) {
-
         const linkHref = link.getAttribute('href');
-        console.log('linkHref:', linkHref);
 
+        // Reset / remove old active page marker
         link.classList.remove('--active');
 
-
+        /*  Checks if the HTMl link and current page matches
+        *  e.g. <a href="./about.html"> should match about.html
+        *  also checks for empty link value (homescreen)
+        */
         if (linkHref === './' + currentPage ||
             linkHref === currentPage ||
             (currentPage === 'index.html' && linkHref === './index.html') ||
@@ -57,10 +61,7 @@ function setActivePage() {
             link.classList.add('--active');
             console.log('Active page set:', linkHref);
         }
-
-
-    })
-
+    });
 }
 
 function navigationHover() {
@@ -78,8 +79,6 @@ function navigationHover() {
         };
     });
 }
-
-
 
 window.onload = function () {
     navigationSticky();
