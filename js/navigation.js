@@ -80,8 +80,8 @@ function navigationHover() {
     });
 }
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     navigationSticky();
     setActivePage();
     navigationHover();
-}
+});

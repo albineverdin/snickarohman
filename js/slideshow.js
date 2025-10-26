@@ -2,9 +2,9 @@
 let slideIndex = 0;
 
 // Initially load first indexed image
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     showSlide(0);
-}
+});
 
 function showSlide(index) {
     let slides = document.querySelectorAll('.slideshow__slide');
