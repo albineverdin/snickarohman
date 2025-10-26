@@ -34,6 +34,15 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 .gallery__overlay {
     display: none;
     position: fixed;
@@ -64,6 +73,18 @@
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .gallery__button-close {
     padding: 0;

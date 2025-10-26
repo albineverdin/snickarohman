@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+/*  Gets every image from the gallery
+ *  Also gets the hidden overlay div with the empty overlay img and close button
+ */
 const galleryItems = document.querySelectorAll('.gallery__img img');
 const overlay = document.getElementById('galleryOverlay');
 const overlayImg = document.getElementById('overlayImg');
