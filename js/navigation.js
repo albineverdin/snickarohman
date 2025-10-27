@@ -81,6 +81,7 @@ function navigationHover() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+
     navigationSticky();
     setActivePage();
     navigationHover();
