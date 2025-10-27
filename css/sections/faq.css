@@ -45,6 +45,11 @@
 .faq-answer {
     padding: 20px;
     background-color: var(--bg);
+    display: none;
+}
+
+.faq-answer.show {
+    display: block;
 }
 
 .faq-answer p {
