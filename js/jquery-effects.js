@@ -46,7 +46,7 @@ $(document).ready(function () {
                     $(this).css({ transform: 'rotate(' + now + 'deg)' });
                 }
             });
-            icon.css('color', 'var(--primary50)');
+            icon.css('color', 'var(--orange)');
             icon.removeClass('rotated');
         } else {
             // Rotate to downwards position and change to darker color
@@ -56,7 +56,7 @@ $(document).ready(function () {
                     $(this).css({ transform: 'rotate(' + now + 'deg)' });
                 }
             });
-            icon.css('color', 'var(--text-dark50)');
+            icon.css('color', 'var(--burgundy-dark)');
             icon.addClass('rotated');
         }
     });

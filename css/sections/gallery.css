@@ -95,7 +95,7 @@
     right: 0;
     background: none;
     border: none;
-    color: var(--bg);
+    color: var(--creme-light);
     font-size: 32px;
     line-height: 40px;
     text-align: center;
@@ -103,5 +103,5 @@
 }
 
 .gallery__button-close:hover {
-    color: var(--bg-dark);
+    color: var(--creme-dark);
 }

@@ -16,8 +16,8 @@
 .services__card {
     max-width: 350px;
     text-align: left;
-    /* background: var(--bg-dark); */
-    border: 2px solid var(--bg-dark);
+    /* background: var(--creme-dark); */
+    border: 2px solid var(--creme-dark);
     border-radius: 8px;
     padding: 2rem;
 }
@@ -35,7 +35,7 @@
     font-family: var(--Inter);
     font-size: 1rem;
     font-weight: 400;
-    color: var(--text-dark100);
+    color: var(--burgundy);
     max-width: 600px;
     margin: auto;
 }
@@ -67,7 +67,7 @@
 }
 
 .rot__calculator-wrapper {
-    color: var(--text-dark100);
+    color: var(--burgundy);
     text-align: left;
     font-family: var(--Montserrat);
     font-size: 1rem;
@@ -88,31 +88,31 @@
 .rot__calculator-input {
     width: 100%;
     background: transparent;
-    outline: 1px solid var(--text-dark100);
+    outline: 1px solid var(--burgundy);
     border: none;
     border-radius: 2px;
-    color: var(--text-light950);
+    color: var(--creme-light);
     font-family: var(--Inter);
     font-size: 1rem;
     font-weight: 500;
     padding: 12px;
-    color: var(--text-dark100);
+    color: var(--burgundy);
 }
 
 .rot__calculator-wrapper input:focus {
-    outline: 2px solid var(--primary100);
+    outline: 2px solid var(--orange-dark);
 }
 
 .contact__input-wrapper ::placeholder {
-    color: var(--text-light950);
+    color: var(--creme-light);
     opacity: 0.1;
 }
 
 .rot__calculator-wrapper button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: var(--text-dark100);
-    color: var(--text-light950);
+    background-color: var(--burgundy);
+    color: var(--creme-light);
     font-size: 1rem;
     font-family: var(--Montserrat);
     font-weight: 600;
@@ -127,7 +127,7 @@
 }
 
 .rot__calculator-wrapper button:hover {
-    background-color: var(--primary50);
+    background-color: var(--orange);
     transform: scale(1.02);
 }
 
@@ -137,7 +137,7 @@
 
 #cs__services-calculator {
     padding: 3rem;
-    background-color: var(--bg-dark);
+    background-color: var(--creme-dark);
     border-radius: 8px;
 }
 

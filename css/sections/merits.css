@@ -2,25 +2,25 @@
     margin: 2.5rem 0;
     padding: 7.5rem 10rem;
     /* padding: 0 10rem; */
-    background-color: var(--text-dark50);
-    /* background-color: var(--text-light900); */
+    background-color: var(--burgundy-dark);
+    /* background-color: var(--creme-dark); */
     text-align: center;
-    
+
 }
 
 .merits__card-container {
-    max-width: 40rem;
+    max-width: 50rem;
     display: flex;
     justify-content: space-between;
     margin: auto;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
     /* margin-top: 3rem; */
     /* color: var(--text-light950); */
 }
 
-.merits__card h2{ 
-    color: var(--text-light950);
+.merits__card h2{
+    color: var(--creme-light);
     font-size: 3rem;
     font-family: var(--Montserrat);
 }
@@ -30,7 +30,7 @@
     font-size: 1rem;
     font-weight: 500;
     margin-top: 0.5rem;
-    color: var(--text-light900)
+    color: var(--creme-dark)
 }
 
 .merits__card-container li {
@@ -39,8 +39,8 @@
 }
 
 .merits__card-icon {
-    /* color: var(--text-light950); */
-    color: var(--primary100);
+    /* color: var(--creme-light); */
+    color: var(--orange-dark);
     width: 4rem;
     height: 4rem;
     margin-bottom: 1rem;

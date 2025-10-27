@@ -1,16 +1,21 @@
 :root {
-    --bg-dark: hsl(35, 50%, 90%);
-    --bg: hsl(35, 50%, 95%);
-    --bg-light: hsl(0, 0%, 100%);
-    --text-dark50: hsl(20, 100%, 5%);
-    --text-dark100: hsl(20, 100%, 10%);
-    --text-light950: hsl(35, 50%, 95%);
-    --text-light900: hsl(35, 50%, 90%);
+    /* Neutral Colors - Creme tones */
+    --creme-light: hsl(35, 50%, 95%);
+    --creme-dark: hsl(35, 50%, 90%);
 
-    --primary10: hsl(20, 100%, 70%);
-    --primary50: hsl(20, 100%, 60%);
-    --primary100: hsl(20, 100%, 50%);
+    /* Dark Colors - Burgundy tones */
+    --burgundy-dark: hsl(20, 100%, 5%);
+    --burgundy: hsl(20, 100%, 10%);
 
+    /* Accent Colors - Orange */
+    --orange-light: hsl(20, 100%, 70%);
+    --orange: hsl(20, 100%, 60%);
+    --orange-dark: hsl(20, 100%, 50%);
+
+    /* Pure white */
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
     --Montserrat: "Montserrat", sans-serif;
     --Inter: "Inter", sans-serif;
 }

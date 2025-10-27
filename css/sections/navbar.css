@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5vw;
-    color: var(--text-light950);
+    color: var(--creme-light);
     font-family: var(--Montserrat);
     font-weight: 600;
     text-transform: uppercase;
@@ -23,12 +23,12 @@
 }
 
 .header__navbar.scrolled {
-    background-color: var(--bg);
+    background-color: var(--creme-light);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header__navbar.scrolled .header__menu-item a {
-    color: var(--text-dark100);
+    color: var(--burgundy);
 }
 
 .header__logo img {
@@ -51,8 +51,8 @@
 
 .header__button {
     padding: 0.5rem 1rem;
-    background-color: var(--primary50);
-    color: var(--text-light950);
+    background-color: var(--orange);
+    color: var(--creme-light);
     font-size: 0.9rem;
     font-family: var(--Montserrat);
     font-weight: 600;
@@ -66,17 +66,17 @@
 }
 
 .header__button:hover {
-    background-color: var(--primary100);
-    color: var(--text-light950);
+    background-color: var(--orange-dark);
+    color: var(--creme-light);
     transform: scale(1.05);
 }
 
 .header__button:hover a {
-    color: var(--text-light950) !important;
+    color: var(--creme-light) !important;
 }
 
 .header__menu-item a.--active {
-    color: var(--primary50) !important;
+    color: var(--orange) !important;
     text-decoration: underline 2px;
     text-underline-offset: 10px;
     font-weight: bold;

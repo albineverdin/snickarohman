@@ -26,15 +26,15 @@
 } */
 
 body {
-    background-color: var(--bg);
-    color: var(--text-dark50);
+    background-color: var(--creme-light);
+    color: var(--burgundy-dark);
 }
 
 p {
     font-family: var(--Inter);
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--text-dark100);
+    color: var(--burgundy);
 }
 
 h1,
@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
     font-family: var(--Montserrat);
-    color: var(--text-dark100);
+    color: var(--burgundy);
 }
 
 
@@ -99,7 +99,7 @@ main {
 }
 
 .--bg-light-off {
-    background-color: var(--bg-dark);
+    background-color: var(--creme-dark);
 }
 
 .cs__title-topper {
@@ -109,7 +109,7 @@ main {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: .5em;
-    color: var(--primary100);
+    color: var(--orange-dark);
 }
 
 .cs__title {
@@ -127,7 +127,7 @@ main {
     font-weight: 700;
     /* margin-bottom: -1.6rem; */
     text-transform: uppercase;
-    color: var(--text-dark100);
+    color: var(--burgundy);
 }
 
 .cs__bread-text {
@@ -136,7 +136,7 @@ main {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--text-dark100);
+    color: var(--burgundy);
     max-width: 60rem;
 }
 
@@ -158,8 +158,8 @@ main {
     align-items: center;
     width: fit-content;
     padding: 1rem 2rem;
-    background-color: var(--text-dark100);
-    color: var(--text-light950);
+    background-color: var(--burgundy);
+    color: var(--creme-light);
     font-family: var(--Montserrat);
     font-weight: 600;
     text-transform: uppercase;
@@ -180,8 +180,8 @@ main {
 }
 
 .cs__button:hover {
-    background-color: var(--primary50);
-    color: var(--text-light900);
+    background-color: var(--orange);
+    color: var(--creme-dark);
     transform: scale(1.05);
 }
 
@@ -189,7 +189,7 @@ main {
     font-family: var(--Inter);
     font-size: 1rem;
     font-weight: 600;
-    color: var(--primary100);
+    color: var(--orange-dark);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -204,7 +204,7 @@ main {
     bottom: 30px;
     right: 30px;
     z-index: 999;
-    background-color: var(--primary50);
+    background-color: var(--orange);
     color: white;
     border: none;
     border-radius: 8px;
@@ -217,11 +217,20 @@ main {
 }
 
 .button__to-top:hover {
-    background-color: var(--primary100);
+    background-color: var(--orange-dark);
 }
 
+/* Scroll Reveal Animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
-
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 

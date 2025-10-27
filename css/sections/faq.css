@@ -6,13 +6,13 @@
 
 .faq-item {
     margin-bottom: 15px;
-    border: 1px solid var(--text-dark100);
+    border: 1px solid var(--burgundy);
     border-radius: 8px;
     overflow: hidden;
 }
 
 .faq-question {
-    background-color: var(--bg-dark);
+    background-color: var(--creme-dark);
     padding: 20px;
     cursor: pointer;
     display: flex;
@@ -34,7 +34,7 @@
 .faq-icon {
     font-size: 24px;
     font-weight: bold;
-    color: var(--primary50);
+    color: var(--orange);
 }
 
 .faq-question.active .faq-icon {
@@ -44,7 +44,7 @@
 
 .faq-answer {
     padding: 20px;
-    background-color: var(--bg);
+    background-color: var(--creme-light);
     display: none;
 }
 
@@ -55,5 +55,5 @@
 .faq-answer p {
     margin: 0;
     line-height: 1.6;
-    color: var(--text-dark100);
+    color: var(--burgundy);
 }

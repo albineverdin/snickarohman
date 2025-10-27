@@ -21,7 +21,7 @@
 
 .slideshow__btn-prev,
 .slideshow__btn-next {
-    color: var(--text-dark100);
+    color: var(--burgundy);
     border: none;
     background-color: none;
     cursor: pointer;
@@ -30,7 +30,7 @@
 
 .slideshow__btn-prev:hover,
 .slideshow__btn-next:hover {
-    color: var(--primary100);
+    color: var(--orange-dark);
 }
 
 

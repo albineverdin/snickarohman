@@ -1,16 +1,16 @@
 .cs__contact {
-    background-color: var(--text-dark50);
+    background-color: var(--burgundy-dark);
     text-align: center;
 }
 
 .cs__contact h1 {
-    color: var(--text-light900);
+    color: var(--creme-dark);
 }
 
 
 .contact__input-wrapper {
     text-align: left;
-    color: var(--text-light900);
+    color: var(--creme-dark);
     font-family: var(--Montserrat);
     font-size: 1rem;
     font-weight: 600;
@@ -25,10 +25,10 @@
 .contact__input-wrapper input, .contact__input-wrapper textarea {
     width: 100%;
     background: transparent;
-    outline: 1px solid var(--text-dark100);
+    outline: 1px solid var(--burgundy);
     border: none;
     border-radius: 2px;
-    color: var(--text-light950);
+    color: var(--creme-light);
     font-family: var(--Inter);
     font-size: 1rem;
     font-weight: 500;
@@ -40,20 +40,20 @@ textarea {
 }
 
 .contact__input-wrapper input:focus, .contact__input-wrapper textarea:focus {
-    outline: 1px solid var(--primary100);
-    /* background: var(--text-dark100) */
+    outline: 1px solid var(--orange-dark);
+    /* background: var(--burgundy) */
 }
 
 .contact__input-wrapper ::placeholder {
-    color: var(--text-light950);
+    color: var(--creme-light);
     opacity: 0.1;
 }
 
 .contact__button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: var(--text-dark100);
-    color: var(--text-light950);
+    background-color: var(--burgundy);
+    color: var(--creme-light);
     font-size: 1rem;
     font-family: var(--Montserrat);
     font-weight: 600;
@@ -68,8 +68,8 @@ textarea {
 }
 
 .contact__button:hover {
-    background-color: var(--primary50);
-    color: var(--text-dark50);
+    background-color: var(--orange);
+    color: var(--burgundy-dark);
     transform: scale(1.02);
 }
 

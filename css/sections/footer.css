@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
-    background-color: var(--text-dark50);
-    color: var(--color-light100);
+    background-color: var(--burgundy-dark);
+    color: var(--creme-light);
     font-family: var(--Montserrat);
     font-weight: 400;
     font-size: 16px;
@@ -49,7 +49,7 @@
 
 .footer__copyright-text {
     font-size: 0.8rem;
-    color: var(--text-light900);
+    color: var(--creme-dark);
     margin-top: 1rem;
 }
 
@@ -59,7 +59,7 @@
 
 
 .footer__menu a {
-    color: var(--text-light950);
+    color: var(--creme-light);
     text-decoration: none;
     margin: 5px 0;
     text-align: left;
@@ -69,12 +69,12 @@
 
 
 .footer__menu-list-wrapper {
-    color: var(--text-light950);
+    color: var(--creme-light);
     list-style: none;
 }
 
 .footer__menu-title {
-    color: var(--text-light950);
+    color: var(--creme-light);
     font-family: var(--Montserrat);
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -91,7 +91,7 @@
 }
 
 .footer__menu-list a:hover {
-    color: var(--primary100);
+    color: var(--orange-dark);
     transition-duration: 400ms;
 }
 

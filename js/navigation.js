@@ -3,9 +3,17 @@ function navigationSticky() {
     const nav = document.querySelector('.header__navbar');
     const logo = document.querySelector('.header__logo img');
 
+    // Detect the hero or banner element to get its height
+    const hero = document.querySelector('.hero');
+    const banner = document.querySelector('.banner');
+    const headerElement = hero || banner;
+
+    // Fallback to 100vh if neither hero nor banner exists
+    const headerHeight = headerElement ? getComputedStyle(headerElement).height : '100vh';
+
     // Create a sentinel element at the top of the page
     const sentinel = document.createElement('div');
-    sentinel.style.height = '100vh'; // Scroll length
+    sentinel.style.height = headerHeight; // Dynamic height based on hero/banner
     sentinel.style.position = 'absolute';
     sentinel.style.top = '0';
     sentinel.style.width = '100%';
@@ -17,12 +25,10 @@ function navigationSticky() {
             // If scrolled past the sentinel (not visible)
             if (!entry.isIntersecting) {
                 nav.classList.add('scrolled');
-                console.log('Added scroll class');
                 logo.src = './images/logo/snickarohman--burgundy-light.png';
             } else {
                 // Reset - remove scrolled class and revert to old logo src
                 nav.classList.remove('scrolled');
-                console.log('Removed scroll class');
                 logo.src = './images/logo/snickarohman--creme.png';
             }
         });
@@ -38,7 +44,6 @@ function setActivePage() {
     * Split divides the string at the '/' character, pop() removes the last element
     */
     const currentPage = window.location.pathname.split('/').pop();
-    console.log('Current page:', currentPage);
 
     // Get all menu links (navbar destinations)
     const menuLinks = document.querySelectorAll('.header__menu li a');
@@ -59,7 +64,6 @@ function setActivePage() {
             (currentPage === '' && linkHref === './index.html')) {
             // Add active class to the link itself
             link.classList.add('--active');
-            console.log('Active page set:', linkHref);
         }
     });
 }
@@ -70,7 +74,7 @@ function navigationHover() {
 
     navLinks.forEach(function (link) {
         link.onmouseover = function () {
-            this.style.color = 'var(--primary100)';
+            this.style.color = 'var(--orange-dark)';
             this.style.transition = 'color 0.3s ease';
         };
 
