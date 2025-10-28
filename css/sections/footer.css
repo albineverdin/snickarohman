@@ -10,18 +10,23 @@
 .footer__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 2rem);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 30px;
+    gap: clamp(1.5rem, 4vw, 2rem);
     text-align: left;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__menu-list-wrapper {
+    flex: 1 1 150px;
 }
 
 .footer__logo-wrapper img {
     display: block;
-    max-width: 300px;
+    max-width: clamp(180px, 25vw, 300px);
     position: relative;
     filter: invert(99%) sepia(1%) saturate(1926%) hue-rotate(321deg) brightness(99%) contrast(97%);
 

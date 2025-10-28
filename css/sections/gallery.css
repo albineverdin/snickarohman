@@ -105,3 +105,14 @@
 .gallery__button-close:hover {
     color: var(--creme-dark);
 }
+
+/* Mobile: Stack gallery columns vertically */
+@media (max-width: 768px) {
+    .gallery__wrapper {
+        flex-direction: column;
+    }
+
+    .gallery__column {
+        width: 100%;
+    }
+}

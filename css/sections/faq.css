@@ -35,11 +35,11 @@
     font-size: 24px;
     font-weight: bold;
     color: var(--orange);
+    transition: transform 0.4s ease, color 0.3s ease;
 }
 
-.faq-question.active .faq-icon {
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
+.faq-icon.rotated {
+    transform: rotate(180deg);
 }
 
 .faq-answer {
@@ -56,4 +56,16 @@
     margin: 0;
     line-height: 1.6;
     color: var(--burgundy);
+}
+
+/* Mobile: Reduce padding and font sizes */
+@media (max-width: 768px) {
+    .faq-question,
+    .faq-answer {
+        padding: 15px;
+    }
+
+    .faq-question h3 {
+        font-size: 16px;
+    }
 }

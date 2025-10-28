@@ -1,13 +1,13 @@
 .banner {
+    position: relative;
     width: 100%;
-    height: 65vh;
+    min-height: 65vh;
     display: flex;
     justify-content:center;
     align-items: center;
     overflow: hidden;
     /* background-image: url('../../images/img__services-banner.jpg'); */
-    z-index: -1;
-    padding: 0 50px;
+    padding: 0 clamp(1rem, 5vw, 50px);
 }
 
 .banner__image-wrapper{
@@ -15,8 +15,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 65vh;
-    z-index: -2;
+    height: 100%;
+    z-index: 0;
     overflow: hidden;
 }
 
@@ -46,7 +46,7 @@
     padding: 2rem;
     margin-top: 3rem;
     color: var(--creme-light) !important;
-    z-index: 2;
+    z-index: 10;
     max-width: 800px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .banner__title {
-    font-size: 4rem;
+    font-size: clamp(2rem, 8vw, 4rem);
     font-weight: 700;
     margin-top: 1rem;
     text-transform: uppercase;

@@ -1,34 +1,32 @@
 #cs__index-services {
     /* background-color: red; */
-    padding: 5rem;
+    padding: clamp(2rem, 5vw, 5rem);
 }
 
 .services__card-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: clamp(1.5rem, 3vw, 2rem);
+    margin-top: clamp(2rem, 5vw, 4rem);
+    margin-bottom: clamp(2rem, 5vw, 4rem);
 }
 
 .services__card {
-    max-width: 350px;
+    max-width: 100%;
     text-align: left;
     /* background: var(--creme-dark); */
     border: 2px solid var(--creme-dark);
     border-radius: 8px;
-    padding: 2rem;
+    padding: clamp(1.5rem, 3vw, 2rem);
 }
 
 .services__card-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: .05em;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .services__card-text {
@@ -148,4 +146,22 @@
 #totalCost {
     font-size: larger;
     padding: 16px 0;
+}
+
+/* Mobile: Stack ROT calculator and adjust sizing */
+@media (max-width: 768px) {
+    .rot-calculator {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .rot__information {
+        max-width: 100%;
+        min-width: unset;
+    }
+
+    .rot__calculator-container {
+        min-width: unset;
+        width: 100%;
+    }
 }
