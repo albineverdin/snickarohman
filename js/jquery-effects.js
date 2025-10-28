@@ -24,6 +24,8 @@ $(document).ready(function () {
 
 
 
+
+
     // === FAQ SECTION === //
 
     // Toggle FAQ 
@@ -39,25 +41,11 @@ $(document).ready(function () {
         var icon = $(this).find('.faq-icon');
 
         if (icon.hasClass('rotated')) {
-            // Rotate back to upward position and change to original color
-            icon.animate({ deg: 0 }, {
-                duration: 400,
-                step: function (now) {
-                    $(this).css({ transform: 'rotate(' + now + 'deg)' });
-                }
-            });
-            icon.css('color', 'var(--orange)');
             icon.removeClass('rotated');
+            icon.css('color', 'var(--orange)');
         } else {
-            // Rotate to downwards position and change to darker color
-            icon.animate({ deg: 180 }, {
-                duration: 400,
-                step: function (now) {
-                    $(this).css({ transform: 'rotate(' + now + 'deg)' });
-                }
-            });
-            icon.css('color', 'var(--burgundy-dark)');
             icon.addClass('rotated');
+            icon.css('color', 'var(--burgundy-dark)');
         }
     });
 });
