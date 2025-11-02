@@ -1,22 +1,11 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 import './Navbar.css';
 
+
 function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  // Handle scroll effect for navbar background
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <header>
-      <nav className={`header__navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className="header__navbar">
         <div className="header__logo">
           <a href="/">
             <img src="/images/logo/snickarohman--creme.png" alt="SnickarÖhmans logga" />
