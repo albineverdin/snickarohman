@@ -1,0 +1,167 @@
+#cs__index-services {
+    /* background-color: red; */
+    padding: clamp(2rem, 5vw, 5rem);
+}
+
+.services__card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: clamp(1.5rem, 3vw, 2rem);
+    margin-top: clamp(2rem, 5vw, 4rem);
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.services__card {
+    max-width: 100%;
+    text-align: left;
+    /* background: var(--creme-dark); */
+    border: 2px solid var(--creme-dark);
+    border-radius: 8px;
+    padding: clamp(1.5rem, 3vw, 2rem);
+}
+
+.services__card-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1.2;
+}
+
+.services__card-text {
+    font-family: var(--Inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--burgundy);
+    max-width: 600px;
+    margin: auto;
+}
+
+.services__card-icon {
+    filter: invert(56%) sepia(43%) saturate(1797%) hue-rotate(335deg) brightness(99%) contrast(105%);
+    height: 3rem;
+}
+
+
+
+.rot-calculator {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.rot__information {
+    max-width: 50vw;
+    min-width: 300px;
+}
+
+.rot__calculator-container {
+    min-width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rot__calculator-wrapper {
+    color: var(--burgundy);
+    text-align: left;
+    font-family: var(--Montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    gap: 1rem;
+
+}
+
+.rot__calculator-label {
+    font-family: var(--Montserrat);
+    font-weight: 600;
+}
+
+.rot__calculator-input {
+    width: 100%;
+    background: transparent;
+    outline: 1px solid var(--burgundy);
+    border: none;
+    border-radius: 2px;
+    color: var(--creme-light);
+    font-family: var(--Inter);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px;
+    color: var(--burgundy);
+}
+
+.rot__calculator-wrapper input:focus {
+    outline: 2px solid var(--orange-dark);
+}
+
+.contact__input-wrapper ::placeholder {
+    color: var(--creme-light);
+    opacity: 0.1;
+}
+
+.rot__calculator-wrapper button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--burgundy);
+    color: var(--creme-light);
+    font-size: 1rem;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 300ms;
+    margin-top: 1rem;
+    transform: scale(1);
+}
+
+.rot__calculator-wrapper button:hover {
+    background-color: var(--orange);
+    transform: scale(1.02);
+}
+
+/* .rot__calculator-wrapper label {
+    color: black;
+} */
+
+#cs__services-calculator {
+    padding: 3rem;
+    background-color: var(--creme-dark);
+    border-radius: 8px;
+}
+
+.rot__calculator-total {
+    margin-top: 1rem;
+}
+
+#totalCost {
+    font-size: larger;
+    padding: 16px 0;
+}
+
+/* Mobile: Stack ROT calculator and adjust sizing */
+@media (max-width: 768px) {
+    .rot-calculator {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .rot__information {
+        max-width: 100%;
+        min-width: unset;
+    }
+
+    .rot__calculator-container {
+        min-width: unset;
+        width: 100%;
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-function inspiration() {
+function Inspiration() {
     return (
         <div>
             <h1>Inspiration</h1>
@@ -9,4 +9,4 @@ function inspiration() {
     );
 }
 
-export default inspiration;
+export default Inspiration;
