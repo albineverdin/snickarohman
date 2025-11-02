@@ -1,68 +1,277 @@
+/* Google Fonts - Must be imported first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Section Styles */
+@import url("./styles/sections/banner.css");
+@import url('./styles/sections/hero.css');
+@import url('./styles/sections/merits.css');
+@import url('./styles/sections/services.css');
+@import url('./styles/sections/gallery.css');
+@import url('./styles/sections/slideshow.css');
+@import url('./styles/sections/faq.css');
+
+/* CSS Variables - Color Palette & Typography */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Light Colors - Creme tones */
+    --creme-light: hsl(35, 50%, 95%);
+    --creme-dark: hsl(35, 50%, 90%);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Dark Colors - Burgundy tones */
+    --burgundy-dark: hsl(20, 100%, 5%);
+    --burgundy: hsl(20, 100%, 10%);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Accent Colors - Orange */
+    --orange-light: hsl(20, 100%, 70%);
+    --orange: hsl(20, 100%, 60%);
+    --orange-dark: hsl(20, 100%, 50%);
+
+    /* Pure white */
+    --white: hsl(0, 0%, 100%);
+
+    /* Text */
+    --Montserrat: "Montserrat", sans-serif;
+    --Inter: "Inter", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-a:hover {
-  color: #535bf2;
-}
+
+/*===== DEBUGGER =====*/
+/* * {
+    border: 1px dashed red;
+} */
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    background-color: var(--creme-light);
+    color: var(--burgundy-dark);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+p {
+    font-family: var(--Inter);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--burgundy);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--Montserrat);
+    color: var(--burgundy);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+main {
+    padding: 0 0 5rem;
+}
+
+/*===== GE MIG ETT HEM =====*/
+.content-section {
+    /* position: relative; */
+    padding: clamp(2rem, 5vw, 5rem) clamp(1.5rem, 8vw, 10rem);
+    width: 100%;
+}
+
+.cs__container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* gap: 5rem; */
+}
+
+.--center-flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.--side-flex {
+    flex-direction: row;
+    gap: clamp(2rem, 6vw, 5rem);
+    flex-wrap: wrap;
+}
+
+.--flex-column {
+    flex-direction: column;
+}
+
+.cs__content-center {
+    margin: auto;
+    width: fit-content;
+    max-width: min(60rem, 90vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cs__content-side {
+    padding: 30px 0;
+    margin: auto;
+    max-width: min(60rem, 100%);
+    text-align: left;
+    flex: 1 1 300px;
+}
+
+.--bg-light-off {
+    background-color: var(--creme-dark);
+}
+
+.cs__title-topper {
+    font-family: var(--Inter);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: var(--orange-dark);
+}
+
+.cs__title {
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1.1;
+    /* text-align: left; */
+}
+
+.cs__subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 700;
+    /* margin-bottom: -1.6rem; */
+    text-transform: uppercase;
+    color: var(--burgundy);
+}
+
+.cs__bread-text {
+    margin: 2rem 0;
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--burgundy);
+    max-width: 60rem;
+}
+
+.cs__image {
+    max-width: 400px;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    flex: 1 1 300px;
+}
+
+.cs__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.cs__button {
+    display: inline-block;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: var(--burgundy);
+    color: var(--creme-light);
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 300ms;
+    transform: scale(1);
+}
+
+.external-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.cs__button:hover {
+    background-color: var(--orange);
+    color: var(--creme-dark);
+    transform: scale(1.05);
+}
+
+.cs__link-external {
+    font-family: var(--Inter);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--orange-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* text-decoration: underline; */
+}
+
+
+/* Back to top button */
+.button__to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.button__to-top:hover {
+    background-color: var(--orange-dark);
+}
+
+/* Scroll Reveal removed - sections now visible immediately */
+
+
+
+
+/* Mobile breakpoint - primarily for navbar hamburger menu if needed in future */
+@media screen and (max-width: 768px) {
+
+    /* Force vertical stacking for side-flex layouts on very small screens */
+    .--side-flex {
+        flex-direction: column;
+    }
+
+    /* Ensure merit cards stack nicely */
+    .merits__card-container {
+        justify-content: center;
+    }
+
+    /* Center footer sections on mobile */
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__menu-list-wrapper {
+        width: 100%;
+    }
+
+    /* Note: Hamburger menu would go here when implemented */
 }
