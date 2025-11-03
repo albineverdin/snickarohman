@@ -1,0 +1,45 @@
+.services-cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: clamp(1.5rem, 3vw, 2rem);
+    margin-top: clamp(2rem, 5vw, 4rem);
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-card {
+    max-width: 100%;
+    text-align: left;
+    /* background: var(--creme-dark); */
+    border: 2px solid var(--creme-dark);
+    border-radius: 8px;
+    padding: clamp(1.5rem, 3vw, 2rem);
+}
+
+.services-card__title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    font-family: var(--Montserrat);
+    color: var(--burgundy);
+}
+
+.services-card__text {
+    font-family: var(--Inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--burgundy);
+    max-width: 600px;
+    margin: auto;
+}
+
+.services-card__icon {
+    filter: invert(56%) sepia(43%) saturate(1797%) hue-rotate(335deg) brightness(99%) contrast(105%);
+    height: 3rem;
+}
