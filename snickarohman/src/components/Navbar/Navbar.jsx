@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-
 function Navbar() {
   return (
     <header>
@@ -12,7 +11,6 @@ function Navbar() {
             <img src="/images/logo/snickarohman--creme.png" alt="SnickarÖhmans logga" />
           </Link>
         </div>
-
         <ul className="header__menu">
           <li className="header__menu-item"><Link to="/">Hem</Link></li>
           <li className="header__menu-item"><Link to="/about">Om mig</Link></li>
@@ -25,5 +23,4 @@ function Navbar() {
     </header>
   );
 }
-
 export default Navbar;
