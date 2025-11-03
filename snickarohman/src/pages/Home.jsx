@@ -1,6 +1,8 @@
 import React from "react";
 import ContentSection from "../components/ContentSection/ContentSection.jsx";
 import SectionHeader from "../components/SectionHeader/SectionHeader.jsx";
+import StatsCards from "../components/StatsCards/StatsCards.jsx";
+import ServicesCards from "../components/ServicesCards/ServicesCards.jsx";
 
 function Home() {
     return (
@@ -42,28 +44,27 @@ function Home() {
                     </p>
                 </ContentSection>
 
-                {/* Merits Section */}
-                <section className="content-section" id="cs__index-merits">
-                    <div className="cs__container">
-                        <ul className="merits__card-container">
-                            <li className="merits__card">
-                                <img src="/images/icon__saw.svg" alt="Icon of a saw" className="merits__card-icon" />
-                                <h2 className="merits__card--number">10+</h2>
-                                <p className="merits__card--text">Års erfarenhet</p>
-                            </li>
-                            <li className="merits__card">
-                                <img src="/images/icon__handshake.svg" alt="Icon of a medal" className="merits__card-icon" />
-                                <h2 className="merits__card--number">500+</h2>
-                                <p className="merits__card--text">Nöjda kunder</p>
-                            </li>
-                            <li className="merits__card">
-                                <img src="/images/icon__medal.svg" alt="Icon of shaking hands" className="merits__card-icon" />
-                                <h2 className="merits__card--number">1000+</h2>
-                                <p className="merits__card--text">Slutförda projekt</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                {/* Stats Section */}
+                <StatsCards cards={[
+                    {
+                        icon: "/images/icon__saw.svg",
+                        iconAlt: "Icon of a saw",
+                        number: "10+",
+                        text: "Års erfarenhet"
+                    },
+                    {
+                        icon: "/images/icon__handshake.svg",
+                        iconAlt: "Icon of handshake",
+                        number: "500+",
+                        text: "Nöjda kunder"
+                    },
+                    {
+                        icon: "/images/icon__medal.svg",
+                        iconAlt: "Icon of medal",
+                        number: "1000+",
+                        text: "Slutförda projekt"
+                    }
+                ]} />
 
                 {/* Services Section */}
                 <section className="content-section" id="cs__index-services">
@@ -74,28 +75,27 @@ function Home() {
                             title="Renovering & snickeri"
                         />
 
-                        <div className="services__card-wrapper">
-                            <div className="services__card">
-                                <img src="/images/icon__sauna.svg" alt="Icon of a house" className="services__card-icon" />
-                                <h2 className="services__card-title">Bygg & konstruktion</h2>
-                                <p className="services__card-text">Från grunden till taknocken - vi bygger allt från garage
-                                    och altaner till kompletta tillbyggnader.</p>
-                            </div>
+                        <ServicesCards cards={[
+                            {
+                                icon: "/images/icon__sauna.svg",
+                                iconAlt: "Icon of sauna",
+                                title: "Bygg & konstruktion",
+                                text: "Från grunden till taknocken - vi bygger allt från garage och altaner till kompletta tillbyggnader."
+                            },
+                            {
+                                icon: "/images/icon__fireplace.svg",
+                                iconAlt: "Icon of fireplace",
+                                title: "Ytskikt och finish",
+                                text: "Målning, tapetsering, golvläggning och andra ytbehandlingar som ger ditt hem den perfekta finishen."
+                            },
+                            {
+                                icon: "/images/icon__garage.svg",
+                                iconAlt: "Icon of garage",
+                                title: "Utomhus & exteriör",
+                                text: "Altaner, staket, fasadarbeten och annat utvändigt snickeri som förhöjer husets karaktär och värde."
+                            }
+                        ]} />
 
-                            <div className="services__card">
-                                <img src="/images/icon__fireplace.svg" alt="Icon of a house" className="services__card-icon" />
-                                <h2 className="services__card-title">Ytskikt och finish</h2>
-                                <p className="services__card-text">Målning, tapetsering, golvläggning och andra ytbehandlingar
-                                    som ger ditt hem den perfekta finishen.</p>
-                            </div>
-
-                            <div className="services__card">
-                                <img src="/images/icon__garage.svg" alt="Icon of a house" className="services__card-icon" />
-                                <h2 className="services__card-title">Utomhus & exteriör</h2>
-                                <p className="services__card-text">Altaner, staket, fasadarbeten och annat utvändigt snickeri
-                                    som förhöjer husets karaktär och värde.</p>
-                            </div>
-                        </div>
                         <div className="cs__button">
                             <a href="/services">Se alla tjänster</a>
                         </div>
