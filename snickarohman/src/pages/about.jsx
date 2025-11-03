@@ -3,6 +3,7 @@ import Banner from "../components/Banner/Banner.jsx";
 import SectionHeader from "../components/SectionHeader/SectionHeader.jsx";
 import ContentSection from "../components/ContentSection/ContentSection.jsx";
 import StatsCards from "../components/StatsCards/StatsCards.jsx";
+import FAQ from "../components/FAQ/FAQ.jsx";
 
 function About() {
     return (
@@ -39,67 +40,47 @@ function About() {
                 {/* Stats Section */}
                 <StatsCards cards={[
                     {
-                        icon: "/images/icon__saw.svg",
-                        iconAlt: "Icon of a saw",
-                        number: "10+",
-                        text: "Års erfarenhet"
+                        icon: "/images/icon__star-shine.svg",
+                        iconAlt: "Icon of a star",
+                        number: "Kvalité",
+                        text: ""
                     },
                     {
-                        icon: "/images/icon__handshake.svg",
+                        icon: "/images/icon__pen-ruler.svg",
                         iconAlt: "Icon of handshake",
-                        number: "500+",
-                        text: "Nöjda kunder"
+                        number: "Noggrant",
+                        text: ""
                     },
                     {
-                        icon: "/images/icon__medal.svg",
-                        iconAlt: "Icon of medal",
-                        number: "1000+",
-                        text: "Slutförda projekt"
+                        icon: "/images/icon__mop.svg",
+                        iconAlt: "Icon of a mop",
+                        number: "Städat",
+                        text: ""
                     }
                 ]} />
 
                 {/* FAQ Section */}
                 <section className="content-section cs__faq">
-
                     <SectionHeader
                         topper="Vanliga frågor"
                         title="FAQ"
                     />
-                    <div className="faq__container">
-
-                        <div className="faq-item">
-                            <div className="faq-question">
-                                <h3>Vad ingår i en offert?</h3>
-                                <span className="faq-icon">&#8963;</span>
-                            </div>
-                            <div className="faq-answer">
-                                <p>En offert innehåller en detaljerad beskrivning av arbetet, materialkostnader, arbetskostnader och
-                                    beräknad tidsåtgång. Vi går också igenom eventuella ROT-avdrag som kan vara aktuella.</p>
-                            </div>
-                        </div>
-
-                        <div className="faq-item">
-                            <div className="faq-question">
-                                <h3>Hur lång tid tar ett projekt?</h3>
-                                <span className="faq-icon">&#8963;</span>
-                            </div>
-                            <div className="faq-answer">
-                                <p>Tidsåtgången beror på projektets omfattning. Ett mindre projekt kan ta några dagar, medan större
-                                    renoveringar kan ta flera veckor. Vi ger alltid en tidsuppskattning i offerten.</p>
-                            </div>
-                        </div>
-
-                        <div className="faq-item">
-                            <div className="faq-question">
-                                <h3>Erbjuder ni garantier på arbetet?</h3>
-                                <span className="faq-icon">&#8963;</span>
-                            </div>
-                            <div className="faq-answer">
-                                <p>Ja, vi erbjuder garanti på både arbete och material enligt branschstandard. Exakt garantitid
-                                    diskuteras för varje projekt.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <FAQ
+                        faqs={[
+                            {
+                                question: "Vad ingår i en offert?",
+                                answer: "En offert innehåller en detaljerad beskrivning av arbetet, materialkostnader, arbetskostnader och beräknad tidsåtgång. Vi går också igenom eventuella ROT-avdrag som kan vara aktuella."
+                            },
+                            {
+                                question: "Hur lång tid tar ett projekt?",
+                                answer: "Tidsåtgången beror på projektets omfattning. Ett mindre projekt kan ta några dagar, medan större renoveringar kan ta flera veckor. Vi ger alltid en tidsuppskattning i offerten."
+                            },
+                            {
+                                question: "Erbjuder ni garantier på arbetet?",
+                                answer: "Ja, vi erbjuder garanti på både arbete och material enligt branschstandard. Exakt garantitid diskuteras för varje projekt."
+                            }
+                        ]}
+                    />
                 </section>
 
             </main>
