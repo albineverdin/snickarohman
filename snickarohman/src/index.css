@@ -4,7 +4,6 @@
 @import url('./styles/sections/hero.css');
 @import url('./styles/sections/gallery.css');
 @import url('./styles/sections/slideshow.css');
-@import url('./styles/sections/faq.css');
 
 /* CSS Variables - Color Palette & Typography */
 :root {
