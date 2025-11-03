@@ -20,7 +20,7 @@ function About() {
                 {/* About Content Section */}
                 <ContentSection
                     imagePosition="left"
-                    imageSrc="/images/img-1.jpg"
+                    imageSrc="/images/img__snickarohman-headshot.jpeg"
                     imageAlt="Snickare vid arbete"
                     topper="Min historia"
                     title="Passion för hantverk"
