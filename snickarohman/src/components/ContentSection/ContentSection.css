@@ -146,7 +146,6 @@
 
 /* Mobile breakpoint */
 @media screen and (max-width: 768px) {
-    /* Force vertical stacking for side-flex layouts on very small screens */
     .--side-flex {
         flex-direction: column;
     }
