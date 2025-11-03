@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Hero from "../components/Hero/Hero.jsx";
 import ContentSection from "../components/ContentSection/ContentSection.jsx";
 import SectionHeader from "../components/SectionHeader/SectionHeader.jsx";
 import StatsCards from "../components/StatsCards/StatsCards.jsx";
@@ -9,19 +10,13 @@ function Home() {
     return (
         <>
             {/* Hero Section */}
-            <div className="hero">
-                <div className="hero__video-container">
-                    <div className="hero__video-container--overlay"></div>
-                    <video autoPlay muted loop className="hero__video">
-                        <source src="/videos/hero__background-video.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div className="hero__content">
-                    <h1 className="hero__title">SNICKARÖHMAN</h1>
-                    <p className="hero__subtitle">Professionellt snickeri & renovering i Umeå</p>
-                    <a href="#cs__contact" className="hero__button">Kontakta oss idag ↓</a>
-                </div>
-            </div>
+            <Hero
+                videoSrc="/videos/hero__background-video.mp4"
+                title="SNICKARÖHMAN"
+                subtitle="Professionellt snickeri & renovering i Umeå"
+                buttonText="Kontakta oss idag ↓"
+                buttonLink="#cs__contact"
+            />
 
             <main>
                 {/* Welcome Section */}
