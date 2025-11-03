@@ -1,4 +1,6 @@
 import React from "react";
+import ContentSection from "../components/ContentSection/ContentSection.jsx";
+import SectionHeader from "../components/SectionHeader/SectionHeader.jsx";
 
 function Home() {
     return (
@@ -20,31 +22,25 @@ function Home() {
 
             <main>
                 {/* Welcome Section */}
-                <section className="content-section">
-                    <div className="cs__container --side-flex">
-                        <div className="cs__image">
-                            <img src="/images/img-1.jpg" alt="Test image" />
-                        </div>
-                        <div className="cs__content-side">
-                            <span className="cs__title-topper">Välkommen till</span>
-                            <h1 className="cs__title">Snickaröhman</h1>
-
-                            <p className="cs__bread-text">
-                                Med över 10 års erfarenhet inom bygg- och renoveringsbranschen erbjuder vi kvalitetsarbete
-                                som håller över tid. Vi är stolta över att leverera professionella snickeritjänster
-                                till privatpersoner och företag i Umeå och omnejd.
-                            </p>
-                            <p className="cs__bread-text">
-                                Oavsett om det handlar om nybyggnation, renovering eller specialsnickeri, så tar vi oss an
-                                alla uppdrag med samma noggrannhet och dedikation. Kontakta oss idag för en kostnadsfri offert!
-                            </p>
-
-                            <div className="cs__button">
-                                <a href="/about">Mer om mig</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <ContentSection
+                    imagePosition="left"
+                    imageSrc="/images/img-1.jpg"
+                    imageAlt="Snickeri exempel"
+                    topper="Välkommen till"
+                    title="Snickaröhman"
+                    buttonText="Mer om mig"
+                    buttonLink="/about"
+                >
+                    <p className="cs__bread-text">
+                        Med över 10 års erfarenhet inom bygg- och renoveringsbranschen erbjuder vi kvalitetsarbete
+                        som håller över tid. Vi är stolta över att leverera professionella snickeritjänster
+                        till privatpersoner och företag i Umeå och omnejd.
+                    </p>
+                    <p className="cs__bread-text">
+                        Oavsett om det handlar om nybyggnation, renovering eller specialsnickeri, så tar vi oss an
+                        alla uppdrag med samma noggrannhet och dedikation. Kontakta oss idag för en kostnadsfri offert!
+                    </p>
+                </ContentSection>
 
                 {/* Merits Section */}
                 <section className="content-section" id="cs__index-merits">
@@ -72,10 +68,11 @@ function Home() {
                 {/* Services Section */}
                 <section className="content-section" id="cs__index-services">
                     <div className="cs__container --center-flex">
-                        <div className="cs__content-center">
-                            <span className="cs__title-topper">Tjänster</span>
-                            <h1 className="cs__title">Renovering & snickeri</h1>
-                        </div>
+
+                        <SectionHeader
+                            topper="Tjänster"
+                            title="Renovering & snickeri"
+                        />
 
                         <div className="services__card-wrapper">
                             <div className="services__card">
@@ -105,40 +102,22 @@ function Home() {
                     </div>
                 </section>
 
-                {/* Inspiration/Slideshow Section */}
-                <section className="content-section" id="cs__inspiration">
-                    <div className="cs__container --side-flex">
-                        <div className="cs__content-side">
-                            <span className="cs__title-topper">Inspiration</span>
-                            <h1 className="cs__title">Lite saker jag kan göra</h1>
-
-                            <p className="cs__bread-text">
-                                Låt dig inspireras av våra tidigare projekt! Här hittar du exempel på
-                                renoveringar, nybyggnationer och specialuppdrag vi genomfört.
-                                Varje projekt genomförs med omsorg och precision.
-                            </p>
-                            <div className="cs__button">
-                                <a href="/inspiration">Mer inspiration</a>
-                            </div>
-                        </div>
-
-                        <div className="slideshow__container">
-                            <button className="slideshow__btn-prev">&#10094;</button>
-
-                            <div className="slideshow__slide">
-                                <img src="/images/slideshow/slideshow__img1.jpg" alt="" />
-                            </div>
-                            <div className="slideshow__slide">
-                                <img src="/images/slideshow/slideshow__img2.jpg" alt="" />
-                            </div>
-                            <div className="slideshow__slide">
-                                <img src="/images/slideshow/slideshow__img3.jpg" alt="" />
-                            </div>
-
-                            <button className="slideshow__btn-next">&#10095;</button>
-                        </div>
-                    </div>
-                </section>
+                {/* Inspiration Section */}
+                <ContentSection
+                    imagePosition="right"
+                    imageSrc="/images/slideshow/slideshow__img1.jpg"
+                    imageAlt="Inspiration från tidigare projekt"
+                    topper="Inspiration"
+                    title="Lite saker jag kan göra"
+                    buttonText="Mer inspiration"
+                    buttonLink="/inspiration"
+                >
+                    <p className="cs__bread-text">
+                        Låt dig inspireras av våra tidigare projekt! Här hittar du exempel på
+                        renoveringar, nybyggnationer och specialuppdrag vi genomfört.
+                        Varje projekt genomförs med omsorg och precision.
+                    </p>
+                </ContentSection>
             </main>
 
             {/* Back to top button */}
