@@ -29,3 +29,13 @@
     font-family: var(--Montserrat);
     color: var(--burgundy);
 }
+
+.section-header p {
+    margin-top: 1rem;
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--burgundy);
+    max-width: 60rem;
+}
