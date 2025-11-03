@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Section Styles */
-@import url("./styles/sections/banner.css");
 @import url('./styles/sections/hero.css');
-@import url('./styles/sections/merits.css');
-@import url('./styles/sections/services.css');
 @import url('./styles/sections/gallery.css');
 @import url('./styles/sections/slideshow.css');
 @import url('./styles/sections/faq.css');
@@ -100,10 +97,6 @@ main {
 
 
 @media screen and (max-width: 768px) {
-
-    .merits__card-container {
-        justify-content: center;
-    }
 
     /* Center footer sections on mobile */
     .footer__container {
