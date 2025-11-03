@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -8,9 +9,9 @@ function Footer() {
 
                 <div className="footer__menu-list-wrapper">
                     <div className="footer__logo-wrapper">
-                        <a href="/" className="footer__logo-link">
+                        <Link to="/" className="footer__logo-link">
                             <img src="/images/logo__full--black.svg" alt="SnickarÖhmans logga" className="footer__logo-image" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="footer__socials-wrapper">
                         <a href="#" className="footer__social-link">
@@ -28,11 +29,11 @@ function Footer() {
                 <div className="footer__menu-list-wrapper">
                     <span className="footer__menu-title">Navigera</span>
                     <ul className="footer__menu-list">
-                        <li><a href="/" className="footer__menu-item">Hem</a></li>
-                        <li><a href="/services" className="footer__menu-item">Tjänster</a></li>
-                        <li><a href="/inspiration" className="footer__menu-item">Inspiration</a></li>
-                        <li><a href="/about" className="footer__menu-item">Om mig</a></li>
-                        <li><a href="/contact" className="footer__menu-item">Kontakta mig</a></li>
+                        <li><Link to="/" className="footer__menu-item">Hem</Link></li>
+                        <li><Link to="/services" className="footer__menu-item">Tjänster</Link></li>
+                        <li><Link to="/inspiration" className="footer__menu-item">Inspiration</Link></li>
+                        <li><Link to="/about" className="footer__menu-item">Om mig</Link></li>
+                        <li><Link to="/contact" className="footer__menu-item">Kontakta mig</Link></li>
                     </ul>
                 </div>
 

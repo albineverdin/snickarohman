@@ -31,7 +31,7 @@ function Services() {
                     </div>
                 </section>
 
-                {/* Featured Service - Uteplats & Grill */}
+                {/* Featured Service*/}
                 <ContentSection
                     imagePosition="left"
                     imageSrc="/images/img__service--featured-campfire.jpg"

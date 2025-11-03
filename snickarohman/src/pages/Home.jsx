@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ContentSection from "../components/ContentSection/ContentSection.jsx";
 import SectionHeader from "../components/SectionHeader/SectionHeader.jsx";
 import StatsCards from "../components/StatsCards/StatsCards.jsx";
@@ -97,7 +98,7 @@ function Home() {
                         ]} />
 
                         <div className="cs__button">
-                            <a href="/services">Se alla tjänster</a>
+                            <Link to="/services">Se alla tjänster</Link>
                         </div>
                     </div>
                 </section>
