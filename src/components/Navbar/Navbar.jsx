@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Function to toggle menu
   const toggleMenu = () => {
@@ -15,13 +16,37 @@ function Navbar() {
     setIsMenuOpen(false);
   };
 
+  // Scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      // Detect if scrolled past the hero section (100vh)
+      const scrollThreshold = window.innerHeight;
+
+      if (window.scrollY > scrollThreshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <nav className="header__navbar">
+      <nav className={`header__navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header__logo">
           <Link to="/" onClick={closeMenu}>
             <img
-              src="/images/logo/snickarohman--creme.png"
+              src={isScrolled
+                ? "/images/logo/snickarohman--burgundy-light.png"
+                : "/images/logo/snickarohman--creme.png"}
               alt="SnickarÖhmans logga"
             />
           </Link>
@@ -40,19 +65,29 @@ function Navbar() {
 
         <ul className={`header__menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="header__menu-item">
-            <Link to="/" onClick={closeMenu}>Hem</Link>
+            <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? '--active' : ''}>
+              Hem
+            </NavLink>
           </li>
           <li className="header__menu-item">
-            <Link to="/about" onClick={closeMenu}>Om mig</Link>
+            <NavLink to="/about" onClick={closeMenu} className={({ isActive }) => isActive ? '--active' : ''}>
+              Om mig
+            </NavLink>
           </li>
           <li className="header__menu-item">
-            <Link to="/services" onClick={closeMenu}>Tjänster</Link>
+            <NavLink to="/services" onClick={closeMenu} className={({ isActive }) => isActive ? '--active' : ''}>
+              Tjänster
+            </NavLink>
           </li>
           <li className="header__menu-item">
-            <Link to="/inspiration" onClick={closeMenu}>Inspiration</Link>
+            <NavLink to="/inspiration" onClick={closeMenu} className={({ isActive }) => isActive ? '--active' : ''}>
+              Inspiration
+            </NavLink>
           </li>
           <li className="header__menu-item">
-            <Link to="/contact" onClick={closeMenu}>Kontakt</Link>
+            <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? '--active' : ''}>
+              Kontakt
+            </NavLink>
           </li>
           <li className="header__button">
             <a href="#cs__contact" onClick={closeMenu}>Offertförfrågan</a>
