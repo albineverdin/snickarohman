@@ -1,6 +1,8 @@
 import React from "react";
 import Banner from "../components/Banner/Banner.jsx";
 import SectionHeader from "../components/SectionHeader/SectionHeader.jsx";
+import Portfolio from "../components/Portfolio/Portfolio.jsx";
+import { projectsData } from "../data/projectsData.js";
 
 function Inspiration() {
     return (
@@ -26,6 +28,13 @@ function Inspiration() {
                                 Varje projekt är ett exempel på precision, hantverk och passion för trä.
                             </p>
                         </SectionHeader>
+                    </div>
+                </section>
+
+                {/* Portfolio Section with Filter */}
+                <section className="content-section">
+                    <div className="cs__content-center">
+                        <Portfolio projects={projectsData} />
                     </div>
                 </section>
             </main>
