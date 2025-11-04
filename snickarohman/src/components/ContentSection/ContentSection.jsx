@@ -12,7 +12,7 @@ function ContentSection({
     buttonText,
     buttonLink
 }) {
-    // Check if buttonLink is a hash link (anchor) or external link
+
     const isHashLink = buttonLink?.startsWith('#');
     const isExternalLink = buttonLink?.startsWith('http');
 
