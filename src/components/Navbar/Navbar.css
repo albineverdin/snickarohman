@@ -76,6 +76,10 @@
     color: var(--creme-light) !important;
 }
 
+.header__menu-item a:hover {
+    color: var(--orange-dark);
+}
+
 .header__menu-item a.--active {
     color: var(--orange) !important;
     text-decoration: underline 2px;
