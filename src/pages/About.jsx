@@ -42,7 +42,7 @@ function About() {
                     {
                         icon: "/images/icon__star-shine.svg",
                         iconAlt: "Icon of a star",
-                        number: "Kvalité",
+                        number: "Snyggt",
                         text: ""
                     },
                     {
